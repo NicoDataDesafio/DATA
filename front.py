@@ -31,7 +31,7 @@ if st.session_state.first_message:
 
         st.markdown("Hola, ¿Como puedo ayudarte?")
 
-    st.session_state.messages.append({"role": "user", "content": "Hola, como puedo ayudarte?"})
+    st.session_state.messages.append({"role": "assistant", "content": "Hola, como puedo ayudarte?"})
     st.session_state.first_message = False
 
 
@@ -50,8 +50,5 @@ if prompt := st.chat_input("cómo puedo ayudarte?"):
         st.markdown(res)
 
     st.session_state.messages.append({"role": "assistant", "content": res})
-
-
-
 
 
