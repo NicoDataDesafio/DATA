@@ -1,0 +1,1331 @@
+{
+  "intents": [
+    
+    { 
+        "tag": "saludo",
+        "patterns": ["Hola", "Buenos días", "Buenas tardes"],
+        "responses": ["¡Hola! Bienvenido a Beyond Education. ¿Cómo puedo ayudarte hoy?", "¡Hola! Bienvenido a Beyond Education. ¿Qué necesitas?", "¡Hola! Bienvenido a Beyond Education. ¿Cómo puedo asistirte?", "¡Buen día! Bienvenido a Beyond Education. ¿Cómo puedo ser de ayuda?"]
+    },    
+    { 
+        "tag": "despedida",
+        "patterns": ["Adiós", "Hasta luego", "Nos vemos"],
+        "responses": ["¡Adiós! ¡Esperamos verte pronto!", "¡Hasta luego! ¡Gracias por tu interés en Beyond Education!", "¡Hasta pronto! ¡Estamos a tu disposición!" ]
+    }, 
+    { 
+        "tag": "agradecimiento",
+        "patterns": ["Gracias", "Muchas gracias", "Gracias por la ayuda", "Gracias por la información"],
+        "responses": ["¡De nada! ¡En Beyond Education estamos para ayudarte!", "¡No hay de qué! Si necesitas cualquier otra cosa, no dudes en consultarnos", "¡Fue un placer ayudarte!"]
+    },
+    { 
+        "tag": "consulta servicios",
+        "patterns": ["Que servicios tenéis", "Que servicios ofrecéis", "que servicios teneis", "que servicios ofreceis"],
+        "responses": ["Actualmente contamos con múltiples servicios. Podemos ofrecer orientación vocacional y profesional, selección de colegios y universidades, preparación de exámenes, campamentos, cursos preuniversitarios, voluntariados y desarrollo personal. ¿En qué estás interesado?"]
+    },
+
+    { 
+         "tag": "orientacion vocacional",
+         "patterns": ["Orientación vocacional", "Quiero orientación vocacional", "Ayuda con mi vocación"],
+         "responses": ["Ofrecemos orientación vocacional para diferentes perfiles:\n1. Perfil vocacional ESCOLAR (13-16 años)\n2. Perfil vocacional UNIVERSITARIO (17-25 años)\n3. Perfil vocacional PROFESIONAL (adultos)\n¿Cuál te interesa?"]
+    },
+    { 
+          "tag": "perfil escolar",
+          "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
+          "responses": ["Para estudiantes de 13 a 16 años, ayudamos a elegir el sistema académico y el colegio que sacará todo tu potencial, además del itinerario de bachillerato español, las asignaturas de IB o A levels que mejor se ajusten a tu perfil y objetivos académicos. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "perfil universitario",
+        "patterns": ["Perfil universitario", "Orientación para estudiantes de 17-25 años", "Vocación universitaria"],
+        "responses": ["Para estudiantes de 17 a 25 años, te ayudamos a elegir tu carrera universitaria, programa de formación profesional o postgrado, así como la mejor universidad para ti en el o los países de interés. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "perfil profesional",
+        "patterns": ["Perfil profesional", "Orientación profesional para adultos", "Reorientación profesional"],
+        "responses": ["Para adultos, ofrecemos orientación para reorientar tu recorrido profesional y construir un camino laboral satisfactorio. Te ayudamos a identificar las áreas profesionales óptimas según tu perfil. ¿Te gustaría más información?"]
+    },
+    { 
+         "tag": "orientacion profesional",
+         "patterns": ["Orientación profesional", "Quiero orientación profesional", "Ayuda con mi carrera profesional"],
+        "responses": ["Ofrecemos dos tipos de orientación profesional:\n1. Acompañamiento individual (6 sesiones de 60 minutos)\n2. Taller grupal (2 sesiones de 90 minutos)\n¿Cuál te interesa?"]
+    },
+        { 
+        "tag": "acompañamiento individual",
+        "patterns": ["Acompañamiento individual", "Sesiones individuales de orientación", "Orientación individual"],
+        "responses": ["El acompañamiento individual incluye 6 sesiones de 60 minutos, presenciales u online. Diseñamos y desarrollamos junto a ti el plan de acción para acercarte a tu objetivo profesional. Te llevarás tu objetivo profesional definido, CV, carta de presentación, perfil digital, estrategia de búsqueda de empleo y preparación de entrevistas. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "taller grupal",
+        "patterns": ["Taller grupal", "Sesiones grupales de orientación", "Orientación en grupo"],
+        "responses": ["El taller grupal incluye 2 sesiones de 90 minutos, presenciales u online. Proporciona claves del mercado laboral y recomendaciones básicas para desarrollar una estrategia de búsqueda de empleo, diseño de CV y carta de presentación, perfil digital, proceso de selección y búsqueda de oportunidades. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "seleccion colegios",
+        "patterns": ["Selección de colegios", "Colegios en el extranjero", "Colegios en España"],
+        "responses": ["Ofrecemos servicios para seleccionar colegios tanto en el extranjero como en España. Ayudamos a encontrar el colegio que mejor se ajuste a tus necesidades y objetivos académicos. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "seleccion universidades",
+        "patterns": ["Selección de universidades", "Universidades en España", "Universidades en el extranjero"],
+        "responses": ["Ofrecemos servicios para seleccionar universidades tanto en España como en el extranjero. Ayudamos a encontrar la universidad que mejor se ajuste a tus intereses y objetivos académicos. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "preparacion examenes",
+        "patterns": ["Preparación de exámenes", "Ayuda con exámenes", "Preparar exámenes"],
+        "responses": ["Ofrecemos servicios de preparación de exámenes para ayudarte a obtener los mejores resultados posibles. ¿Te gustaría más información?", "Nuestros servicios de preparación de exámenes te ayudarán a obtener los mejores resultados. Ofrecemos programas adaptados a tus necesidades, con material de estudio, clases prácticas y apoyo personalizado. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "campamentos",
+        "patterns": ["Campamentos", "Campamentos de verano", "Quiero ir a un campamento"],
+        "responses": ["Ofrecemos una variedad de campamentos para jóvenes de 7 a 19 años, incluyendo campamentos de multiaventura, inmersión en el idioma, deportes y cursos de monitores. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "cursos preuniversitarios",
+        "patterns": ["Cursos preuniversitarios", "Programas de verano preuniversitarios", "Quiero hacer un curso preuniversitario"],
+        "responses": ["Los cursos preuniversitarios de verano son programas ofrecidos en diferentes universidades o instituciones educativas de prestigio. Están dirigidos a estudiantes de 14 a 18 años y permiten la exploración de intereses académicos y profesionales, además de tener un primer contacto con la vida universitaria. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "voluntariado",
+        "patterns": ["Voluntariado", "Quiero hacer voluntariado", "Voluntariado en España"],
+        "responses": ["Ofrecemos programas de voluntariado en colaboración con diferentes organizaciones, dirigidos a jóvenes de 14 a 25 años. Estas experiencias te permitirán crecer y desarrollar competencias emocionales y profesionales. ¿Te gustaría más información?"]
+    },
+    { 
+        "tag": "desarrollo personal",
+        "patterns": ["Desarrollo personal", "Cursos de desarrollo personal", "Quiero mejorar mis habilidades"],
+        "responses": ["Ofrecemos cursos y charlas para desarrollar habilidades de comunicación, negociación, liderazgo, gestión del tiempo y más. Estos cursos están dirigidos tanto a jóvenes como a padres. ¿Te gustaría más información?"]
+    },
+
+    {
+        "tag": "colegios extranjero",
+        "patterns": ["Colegios en el extranjero", "Quiero estudiar en el extranjero"],
+        "responses": [ "Te ayudamos a seleccionar colegios en el extranjero que se adapten a tu perfil y objetivos académicos. Trabajamos con una variedad de instituciones en países como Reino Unido, Estados Unidos, Canadá, entre otros. ¿Te gustaría más información?"
+                        ]
+    },
+    {
+        "tag": "colegios españa",
+        "patterns": ["Colegios en España", "Quiero estudiar en un colegio en España"],
+        "responses": [ "Ofrecemos servicios de selección de colegios en España, adaptándonos a tu perfil y necesidades académicas. ¿Te gustaría más información sobre este servicio?"
+                        ]
+    },
+    {
+        "tag": "universidades españa",
+        "patterns": ["Universidades en España", "Quiero estudiar en una universidad en España"],
+        "responses": [ "Te ayudamos a seleccionar la mejor universidad en España para tus estudios de grado o postgrado. Analizamos tu perfil y objetivos para ofrecerte las opciones más adecuadas. ¿Te gustaría más información?"
+                        ]
+    },
+    {
+        "tag": "universidades extranjero",
+        "patterns": ["Universidades en el extranjero", "Quiero estudiar en una universidad en el extranjero"],
+        "responses": [ "Ofrecemos servicios de selección de universidades en el extranjero, ayudándote a encontrar la institución y el programa que mejor se adapten a tus intereses y metas académicas. ¿Te gustaría más información?"]
+    },
+    {
+        "tag": "taller grupal",
+        "patterns": ["Taller grupal", "Sesiones grupales de orientación", "Orientación en grupo"],
+        "responses": ["Nuestros talleres grupales brindan una oportunidad para aprender y crecer junto a otros profesionales. ¿Te gustaría participar en una sesión grupal?"]
+    },
+    {
+        "tag": "consulta servicios",
+        "patterns": ["Que servicios tenéis", "Que servicios ofrecéis"],
+        "responses": ["Actualmente contamos con una amplia gama de servicios diseñados para satisfacer tus necesidades educativas y profesionales. ¿Hay algo específico en lo que estás interesado?"]
+    },
+    {
+        "tag": "orientacion vocacional",
+        "patterns": ["Orientación vocacional", "Quiero orientación vocacional", "Ayuda con mi vocación"],
+        "responses": ["Nuestra orientación vocacional aborda las necesidades únicas de cada persona. ¿Te gustaría explorar opciones para descubrir tu vocación?"]
+    },
+    {
+        "tag": "perfil escolar",
+        "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
+        "responses": ["Para estudiantes de 13 a 16 años, ofrecemos un enfoque personalizado para ayudarte a elegir el mejor camino académico. ¿Deseas más detalles sobre cómo podemos ayudarte a alcanzar tu máximo potencial?"]
+    },
+    {
+        "tag": "perfil universitario",
+        "patterns": ["Perfil universitario", "Orientación para estudiantes de 17-25 años", "Vocación universitaria"],
+        "responses": ["La transición a la universidad es emocionante pero también puede ser desafiante. Nuestro equipo está aquí para brindarte orientación y apoyo en cada paso del camino. ¿Qué aspectos de la planificación universitaria te interesan más?"]
+    },
+    {
+        "tag": "perfil profesional",
+        "patterns": ["Perfil profesional", "Orientación profesional para adultos", "Reorientación profesional"],
+        "responses": ["La orientación profesional es fundamental para adaptarse a un mundo laboral en constante cambio. ¿Qué metas profesionales te gustaría alcanzar?"]
+    },
+    {
+        "tag": "orientacion profesional",
+        "patterns": ["Orientación profesional", "Quiero orientación profesional", "Ayuda con mi carrera profesional"],
+        "responses": ["Nuestros servicios de orientación profesional están diseñados para ayudarte a avanzar en tu carrera con confianza. ¿Cómo podemos ayudarte a lograr tus objetivos profesionales?"]
+    },
+    {
+        "tag": "acompañamiento individual",
+        "patterns": ["Acompañamiento individual", "Sesiones individuales de orientación", "Orientación individual"],
+        "responses": ["El acompañamiento individual ofrece una atención personalizada para ayudarte a alcanzar tus metas profesionales. ¿Cómo podemos adaptar nuestro enfoque para satisfacer tus necesidades específicas?"]
+    },
+    {
+        "tag": "seleccion colegios",
+        "patterns": ["Selección de colegios", "Colegios en el extranjero", "Colegios en España"],
+        "responses": ["Encontrar el colegio adecuado es crucial para tu éxito académico. Estamos aquí para ayudarte a explorar tus opciones y tomar una decisión informada. ¿Cómo podemos ayudarte en tu búsqueda de colegio?"]
+    },
+    {
+        "tag": "seleccion universidades",
+        "patterns": ["Selección de universidades", "Universidades en España", "Universidades en el extranjero"],
+        "responses": ["Elegir la universidad correcta es un paso importante en tu viaje educativo. ¿Qué aspectos son más importantes para ti al seleccionar una universidad?"]
+    },
+    {
+        "tag": "preparacion examenes",
+        "patterns": ["Preparación de exámenes", "Ayuda con exámenes", "Preparar exámenes"],
+        "responses": ["La preparación adecuada es clave para el éxito en los exámenes. ¿Cómo podemos ayudarte a prepararte para tus próximos desafíos académicos?"]
+    },
+    {
+        "tag": "campamentos",
+        "patterns": ["Campamentos", "Campamentos de verano", "Quiero ir a un campamento"],
+        "responses": ["Los campamentos ofrecen una oportunidad única para crecer, aprender y divertirse. ¿En qué tipo de campamento estás interesado?"]
+    },
+    {
+        "tag": "cursos preuniversitarios",
+        "patterns": ["Cursos preuniversitarios", "Programas de verano preuniversitarios", "Quiero hacer un curso preuniversitario"],
+        "responses": ["Los cursos preuniversitarios te ayudarán a prepararte para tus futuros estudios. ¿Qué áreas académicas te gustaría explorar durante el curso?"]
+    },
+    {
+        "tag": "voluntariado",
+        "patterns": ["Voluntariado", "Quiero hacer voluntariado", "Voluntariado en España"],
+        "responses": ["El voluntariado es una forma gratificante de contribuir a la comunidad y desarrollar nuevas habilidades. ¿En qué tipo de proyecto de voluntariado estás interesado?"]
+    },
+    {
+        "tag": "desarrollo personal",
+        "patterns": ["Desarrollo personal", "Cursos de desarrollo personal", "Quiero mejorar mis habilidades"],
+        "responses": ["El desarrollo personal es un viaje continuo de crecimiento y auto-mejora. ¿Cuáles son tus áreas prioritarias para el desarrollo personal?"]
+    },
+    {
+        "tag": "orientacion vocacional",
+        "patterns": ["Orientación vocacional", "Quiero orientación vocacional", "Ayuda con mi vocación"],
+        "responses": ["La orientación vocacional es crucial para tomar decisiones educativas y profesionales informadas. ¿En qué etapa de tu vida te encuentras?"]
+    },
+    {
+        "tag": "perfil escolar",
+        "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
+        "responses": ["Ayudamos a estudiantes de secundaria a explorar sus intereses y aptitudes para encontrar el camino académico adecuado. ¿Cuál es tu principal inquietud en este momento?"]
+    },
+    {
+        "tag": "perfil universitario",
+        "patterns": ["Perfil universitario", "Orientación para estudiantes de 17-25 años", "Vocación universitaria"],
+        "responses": ["La elección de una carrera universitaria es una decisión importante. ¿Qué te apasiona y qué objetivos académicos tienes en mente?"]
+    },
+    {
+        "tag": "perfil profesional",
+        "patterns": ["Perfil profesional", "Orientación profesional para adultos", "Reorientación profesional"],
+        "responses": ["La reorientación profesional es una oportunidad para descubrir nuevas pasiones y metas laborales. ¿Cuál es tu experiencia laboral actual y qué te gustaría lograr en el futuro?"]
+    },
+    {
+        "tag": "orientacion profesional",
+        "patterns": ["Orientación profesional", "Quiero orientación profesional", "Ayuda con mi carrera profesional"],
+        "responses": ["La orientación profesional te ayudará a identificar tus fortalezas y oportunidades en el mercado laboral. ¿Qué aspectos de tu carrera profesional te gustaría explorar más a fondo?"]
+    },
+    {
+        "tag": "acompañamiento individual",
+        "patterns": ["Acompañamiento individual", "Sesiones individuales de orientación", "Orientación individual"],
+        "responses": ["El acompañamiento individual te brinda la atención personalizada que necesitas para alcanzar tus objetivos profesionales. ¿Cuál es tu principal desafío en este momento de tu carrera?"]
+    },
+    {
+        "tag": "taller grupal",
+        "patterns": ["Taller grupal", "Sesiones grupales de orientación", "Orientación en grupo"],
+        "responses": ["Los talleres grupales ofrecen un entorno colaborativo para explorar temas laborales clave y desarrollar nuevas habilidades. ¿Qué áreas específicas te gustaría abordar en un entorno grupal?"]
+    }, 
+
+    {
+        "tag": "mas_campamentos",
+        "patterns": ["Más información sobre campamentos", "Quiero saber más sobre los campamentos de verano"],
+        "responses": ["¡Claro! Puedes encontrar más detalles sobre nuestros campamentos de verano en este enlace: [Campamentos de Verano](https://beyondeducation.es/campamentos-verano/). ¿Puedo ayudarte con algo más?"]
+    },
+    {
+        "tag": "mas_cursos_preuniversitarios",
+        "patterns": ["Más detalles sobre cursos preuniversitarios", "¿Puedes darme más información sobre los cursos de verano?"],
+        "responses": ["Por supuesto, aquí tienes más información sobre nuestros cursos preuniversitarios: [Cursos Preuniversitarios](https://beyondeducation.es/cursos-preuniversitarios-verano/). ¿Hay algo más en lo que pueda ayudarte?"]
+    },
+    {
+        "tag": "mas_voluntariado",
+        "patterns": ["Más información sobre voluntariado", "Quiero saber más sobre cómo hacer voluntariado"],
+        "responses": ["Para obtener más detalles sobre cómo participar en programas de voluntariado, te invito a visitar nuestra sección de [Voluntariado](https://beyondeducation.es/hacer-voluntariado-espana/). ¿Puedo ayudarte con algo más?"]
+    },
+    {
+        "tag": "mas_desarrollo_personal",
+        "patterns": ["Más detalles sobre desarrollo personal", "¿Puedes darme más información sobre los cursos de desarrollo personal?"],
+        "responses": ["Encuentra más información sobre nuestros cursos de desarrollo personal aquí: [Desarrollo Personal](https://beyondeducation.es/desarrollo-personal-cursos/). ¿Necesitas ayuda adicional en algo más?"]
+    },
+    {
+        "tag": "mas_universidades_espana",
+        "patterns": ["Más información sobre universidades en España", "Quiero saber más sobre estudiar en una universidad en España"],
+        "responses": ["Para obtener más detalles sobre las universidades en España y cómo podemos ayudarte, visita nuestra página: [Universidades en España](https://beyondeducation.es/orientacion-universitaria-en-espana/). ¿Te gustaría explorar algo más?"]
+    },
+    {
+        "tag": "mas_universidades_extranjero",
+        "patterns": ["Más detalles sobre universidades en el extranjero", "¿Puedes darme más información sobre estudiar en el extranjero?"],
+        "responses": ["Aquí encontrarás información detallada sobre estudiar en el extranjero: [Universidades en el Extranjero](https://beyondeducation.es/estudiar-en-el-extranjero-grados-y-postgrados/). ¿Hay algo más en lo que pueda ayudarte?"]
+    },
+    {
+        "tag": "mas_preparacion_examenes",
+        "patterns": ["Más información sobre preparación de exámenes", "Quiero saber más sobre cómo prepararme para los exámenes"],
+        "responses": ["Para obtener más detalles sobre nuestros servicios de preparación de exámenes, visita este enlace: [Preparación de Exámenes](https://beyondeducation.es/preparacion-examenes/). ¿Puedo ayudarte con algo más?"]
+    },
+    {
+        "tag": "mas_colegios_extranjero",
+        "patterns": ["Más detalles sobre colegios en el extranjero", "¿Puedes darme más información sobre estudiar en un colegio en el extranjero?"],
+        "responses": ["Encuentra más información sobre estudiar en colegios en el extranjero aquí: [Colegios en el Extranjero](https://beyondeducation.es/estudiar-en-el-extranjero/). ¿Necesitas ayuda adicional en algo más?"]
+    },
+    {
+        "tag": "mas_colegios_espana",
+        "patterns": ["Más información sobre colegios en España", "Quiero saber más sobre estudiar en un colegio en España"],
+        "responses": ["Para obtener más detalles sobre estudiar en colegios en España, visita nuestra página: [Colegios en España](https://beyondeducation.es/seleccion-colegios-espana-2/). ¿Te gustaría explorar algo más?"]
+    },
+    {
+        "tag": "mas_orientacion_vocacional",
+        "patterns": ["Más detalles sobre orientación vocacional", "¿Puedes darme más información sobre cómo obtener orientación vocacional?"],
+        "responses": ["Aquí encontrarás información detallada sobre nuestros servicios de orientación vocacional: [Orientación Vocacional](https://beyondeducation.es/orientacion-vocacional-profesional-academica/). ¿Hay algo más en lo que pueda ayudarte?"]
+    },
+    {
+        "tag": "mas_orientacion_profesional",
+        "patterns": ["Más información sobre orientación profesional", "Quiero saber más sobre cómo obtener orientación laboral"],
+        "responses": ["Para obtener más detalles sobre nuestros servicios de orientación profesional, visita nuestra página: [Orientación Profesional](https://beyondeducation.es/orientacion-profesional-2/). ¿Puedo ayudarte con algo más?"]
+    },
+
+    {
+        "tag": "saludo",
+        "patterns": ["Hola", "Buenos días", "Buenas tardes"],
+        "responses": ["¡Hola! ¿Cómo puedo ayudarte hoy?", "¡Hola! ¿Qué necesitas?", "¡Hola! ¿En qué puedo asistirte hoy?"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["Adiós", "Hasta luego", "Nos vemos"],
+      "responses": ["¡Adiós! ¡Esperamos verte pronto!", "¡Hasta luego! ¡Gracias por tu interés!", "¡Hasta pronto! ¡Estamos a tu disposición!"]
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": ["Gracias", "Muchas gracias", "Gracias por la ayuda", "Gracias por la información"],
+      "responses": ["¡De nada! ¡Estoy aquí para ayudarte!", "¡No hay de qué! Si necesitas cualquier otra cosa, no dudes en consultarnos", "¡Fue un placer ayudarte!"]
+    },
+    {
+      "tag": "consulta servicios",
+      "patterns": ["Qué servicios tenéis", "Qué servicios ofrecéis"],
+      "responses": ["Actualmente contamos con múltiples servicios. Podemos ofrecer orientación vocacional y profesional, selección de colegios y universidades, preparación de exámenes, campamentos, cursos preuniversitarios, voluntariados y desarrollo personal. ¿En qué estás interesado?", "Ofrecemos una variedad de servicios. ¿Te gustaría saber más sobre alguno en particular?"]
+    },
+    {
+      "tag": "orientacion vocacional",
+      "patterns": ["Orientación vocacional", "Quiero orientación vocacional", "Ayuda con mi vocación"],
+      "responses": ["Ofrecemos orientación vocacional para diferentes perfiles:\n1. Perfil vocacional ESCOLAR (13-16 años)\n2. Perfil vocacional UNIVERSITARIO (17-25 años)\n3. Perfil vocacional PROFESIONAL (adultos)\n¿Cuál te interesa? Para más detalles, puedes visitar nuestra página [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "perfil escolar",
+      "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
+      "responses": ["Para estudiantes de 13 a 16 años, ayudamos a elegir el sistema académico y el colegio que sacará todo tu potencial, además del itinerario de bachillerato español, las asignaturas de IB o A levels que mejor se ajusten a tu perfil y objetivos académicos. ¿Te gustaría más información? Puedes encontrar más detalles [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "perfil universitario",
+      "patterns": ["Perfil universitario", "Orientación para estudiantes de 17-25 años", "Vocación universitaria"],
+      "responses": ["Para estudiantes de 17 a 25 años, te ayudamos a elegir tu carrera universitaria, programa de formación profesional o postgrado, así como la mejor universidad para ti en el o los países de interés. ¿Te gustaría más información? Encuentra más detalles [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "perfil profesional",
+      "patterns": ["Perfil profesional", "Orientación profesional para adultos", "Reorientación profesional"],
+      "responses": ["Para adultos, ofrecemos orientación para reorientar tu recorrido profesional y construir un camino laboral satisfactorio. Te ayudamos a identificar las áreas profesionales óptimas según tu perfil. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "orientacion profesional",
+      "patterns": ["Orientación profesional", "Quiero orientación profesional", "Ayuda con mi carrera profesional"],
+      "responses": ["Ofrecemos dos tipos de orientación profesional:\n1. Acompañamiento individual (6 sesiones de 60 minutos)\n2. Taller grupal (2 sesiones de 90 minutos)\n¿Cuál te interesa? Para más detalles, puedes visitar nuestra página [aquí](https://beyondeducation.es/orientacion-profesional-2/)."]
+    },
+    {
+      "tag": "acompañamiento individual",
+      "patterns": ["Acompañamiento individual", "Sesiones individuales de orientación", "Orientación individual"],
+      "responses": ["El acompañamiento individual incluye 6 sesiones de 60 minutos, presenciales u online. Diseñamos y desarrollamos junto a ti el plan de acción para acercarte a tu objetivo profesional. Te llevarás tu objetivo profesional definido, CV, carta de presentación, perfil digital, estrategia de búsqueda de empleo y preparación de entrevistas. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/orientacion-profesional-2/)."]
+    },
+    {
+      "tag": "taller grupal",
+      "patterns": ["Taller grupal", "Sesiones grupales de orientación", "Orientación en grupo"],
+      "responses": ["El taller grupal incluye 2 sesiones de 90 minutos, presenciales u online. Proporciona claves del mercado laboral y recomendaciones básicas para desarrollar una estrategia de búsqueda de empleo, diseño de CV y carta de presentación, perfil digital, proceso de selección y búsqueda de oportunidades. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/orientacion-profesional-2/)."]
+    },
+    {
+      "tag": "seleccion colegios",
+      "patterns": ["Selección de colegios", "Colegios en el extranjero", "Colegios en España"],
+      "responses": ["Ofrecemos servicios para seleccionar colegios tanto en el extranjero como en España. Ayudamos a encontrar el colegio que mejor se ajuste a tus necesidades y objetivos académicos. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/seleccion-colegios-espana-2/)."]
+    },
+    {
+      "tag": "seleccion universidades",
+      "patterns": ["Selección de universidades", "Universidades en España", "Universidades en el extranjero"],
+      "responses": ["Ofrecemos servicios para seleccionar universidades tanto en España como en el extranjero. Ayudamos a encontrar la universidad que mejor se ajuste a tus intereses y objetivos académicos. ¿Te gustaría más información? Más información sobre universidades en España [aquí](https://beyondeducation.es/orientacion-universitaria-en-espana/) y sobre universidades en el extranjero [aquí](https://beyondeducation.es/estudiar-en-el-extranjero-grados-y-postgrados/)."]
+    },
+    {
+      "tag": "preparacion examenes",
+      "patterns": ["Preparación de exámenes", "Ayuda con exámenes", "Preparar exámenes"],
+      "responses": ["Ofrecemos servicios de preparación de exámenes para ayudarte a obtener los mejores resultados posibles. ¿Te gustaría más información?", "Nuestros servicios de preparación de exámenes te ayudarán a obtener los mejores resultados. Ofrecemos programas adaptados a tus necesidades, con material de estudio, clases prácticas y apoyo personalizado. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/preparacion-examenes/)."]
+    },
+    {
+      "tag": "campamentos",
+      "patterns": ["Campamentos", "Campamentos de verano", "Quiero ir a un campamento"],
+      "responses": ["Ofrecemos una variedad de campamentos para jóvenes de 7 a 19 años, incluyendo campamentos de multiaventura, inmersión en el idioma, deportes y cursos de monitores. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/campamentos-verano/)."]
+    },
+    {
+      "tag": "cursos preuniversitarios",
+      "patterns": ["Cursos preuniversitarios", "Programas de verano preuniversitarios", "Quiero hacer un curso preuniversitario"],
+      "responses": ["Los cursos preuniversitarios de verano son programas ofrecidos en diferentes universidades o instituciones educativas de prestigio. Están dirigidos a estudiantes de 14 a 18 años y permiten la exploración de intereses académicos y profesionales, además de tener un primer contacto con la vida universitaria. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/cursos-preuniversitarios-verano/)."]
+    },
+    {
+      "tag": "voluntariado",
+      "patterns": ["Voluntariado", "Quiero hacer voluntariado", "Voluntariado en España"],
+      "responses": ["Ofrecemos programas de voluntariado en colaboración con diferentes organizaciones, dirigidos a jóvenes de 14 a 25 años. Estas experiencias te permitirán crecer y desarrollar competencias emocionales y profesionales. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/hacer-voluntariado-espana/)."]
+    },
+    {
+      "tag": "desarrollo personal",
+      "patterns": ["Desarrollo personal", "Cursos de desarrollo personal", "Quiero mejorar mis habilidades"],
+      "responses": ["Ofrecemos cursos y charlas para desarrollar habilidades de comunicación, negociación, liderazgo, gestión del tiempo y más. Estos cursos están dirigidos tanto a jóvenes como a padres. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/desarrollo-personal-cursos/)."]
+    },
+    {
+      "tag": "colegios extranjero",
+      "patterns": ["Colegios en el extranjero", "Quiero estudiar en el extranjero"],
+      "responses": ["Te ayudamos a seleccionar colegios en el extranjero que se adapten a tu perfil y objetivos académicos. Trabajamos con una variedad de instituciones en países como Reino Unido, Estados Unidos, Canadá, entre otros. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/estudiar-en-el-extranjero/)."]
+    },
+    {
+      "tag": "colegios españa",
+      "patterns": ["Colegios en España", "Quiero estudiar en un colegio en España"],
+      "responses": ["Ofrecemos servicios de selección de colegios en España, adaptándonos a tu perfil y necesidades académicas. ¿Te gustaría más información sobre este servicio? Encuentra más información [aquí](https://beyondeducation.es/seleccion-colegios-espana-2/)."]
+    },
+    {
+      "tag": "universidades españa",
+      "patterns": ["Universidades en España", "Quiero estudiar en una universidad en España"],
+      "responses": ["Te ayudamos a seleccionar la mejor universidad en España para tus estudios de grado o postgrado. Analizamos tu perfil y objetivos para ofrecerte las opciones más adecuadas. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/orientacion-universitaria-en-espana/)."]
+    },
+    {
+      "tag": "universidades extranjero",
+      "patterns": ["Universidades en el extranjero", "Quiero estudiar en una universidad en el extranjero"],
+      "responses": ["Ofrecemos servicios de selección de universidades en el extranjero, ayudándote a encontrar la institución y el programa que mejor se adapten a tus intereses y metas académicas. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/estudiar-en-el-extranjero-grados-y-postgrados/)."]
+    },
+    
+    {
+      "tag": "saludo",
+      "patterns": ["Hola", "Buenos días", "Buenas tardes"],
+      "responses": ["¡Hola! ¿Cómo puedo ayudarte hoy?", "¡Hola! ¿Qué necesitas?", "¡Hola! ¿En qué puedo asistirte hoy?"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["Adiós", "Hasta luego", "Nos vemos"],
+      "responses": ["¡Adiós! ¡Esperamos verte pronto!", "¡Hasta luego! ¡Gracias por tu interés!", "¡Hasta pronto! ¡Estamos a tu disposición!"]
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": ["Gracias", "Muchas gracias", "Gracias por la ayuda", "Gracias por la información"],
+      "responses": ["¡De nada! ¡Estoy aquí para ayudarte!", "¡No hay de qué! Si necesitas cualquier otra cosa, no dudes en consultarnos", "¡Fue un placer ayudarte!"]
+    },
+    {
+      "tag": "consulta servicios",
+      "patterns": ["Qué servicios tenéis", "Qué servicios ofrecéis"],
+      "responses": ["Actualmente contamos con múltiples servicios. Podemos ofrecer orientación vocacional y profesional, selección de colegios y universidades, preparación de exámenes, campamentos, cursos preuniversitarios, voluntariados y desarrollo personal. ¿En qué estás interesado?", "Ofrecemos una variedad de servicios. ¿Te gustaría saber más sobre alguno en particular?"]
+    },
+    {
+      "tag": "orientacion vocacional",
+      "patterns": ["Orientación vocacional", "Quiero orientación vocacional", "Ayuda con mi vocación"],
+      "responses": ["Ofrecemos orientación vocacional para diferentes perfiles:\n1. Perfil vocacional ESCOLAR (13-16 años)\n2. Perfil vocacional UNIVERSITARIO (17-25 años)\n3. Perfil vocacional PROFESIONAL (adultos)\n¿Cuál te interesa? Para más detalles, puedes visitar nuestra página [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "perfil escolar",
+      "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
+      "responses": ["Para estudiantes de 13 a 16 años, ayudamos a elegir el sistema académico y el colegio que sacará todo tu potencial, además del itinerario de bachillerato español, las asignaturas de IB o A levels que mejor se ajusten a tu perfil y objetivos académicos. ¿Te gustaría más información? Puedes encontrar más detalles [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "perfil universitario",
+      "patterns": ["Perfil universitario", "Orientación para estudiantes de 17-25 años", "Vocación universitaria"],
+      "responses": ["Para estudiantes de 17 a 25 años, te ayudamos a elegir tu carrera universitaria, programa de formación profesional o postgrado, así como la mejor universidad para ti en el o los países de interés. ¿Te gustaría más información? Encuentra más detalles [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "perfil profesional",
+      "patterns": ["Perfil profesional", "Orientación profesional para adultos", "Reorientación profesional"],
+      "responses": ["Para adultos, ofrecemos orientación para reorientar tu recorrido profesional y construir un camino laboral satisfactorio. Te ayudamos a identificar las áreas profesionales óptimas según tu perfil. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
+    },
+    {
+      "tag": "orientacion profesional",
+      "patterns": ["Orientación profesional", "Quiero orientación profesional", "Ayuda con mi carrera profesional"],
+      "responses": ["Ofrecemos dos tipos de orientación profesional:\n1. Acompañamiento individual (6 sesiones de 60 minutos)\n2. Taller grupal (2 sesiones de 90 minutos)\n¿Cuál te interesa? Para más detalles, puedes visitar nuestra página [aquí](https://beyondeducation.es/orientacion-profesional-2/)."]
+    },
+    {
+      "tag": "acompañamiento individual",
+      "patterns": ["Acompañamiento individual", "Sesiones individuales de orientación", "Orientación individual"],
+      "responses": ["El acompañamiento individual incluye 6 sesiones de 60 minutos, presenciales u online. Diseñamos y desarrollamos junto a ti el plan de acción para acercarte a tu objetivo profesional. Te llevarás tu objetivo profesional definido, CV, carta de presentación, perfil digital, estrategia de búsqueda de empleo y preparación de entrevistas. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/orientacion-profesional-2/)."]
+    },
+    {
+      "tag": "taller grupal",
+      "patterns": ["Taller grupal", "Sesiones grupales de orientación", "Orientación en grupo"],
+      "responses": ["El taller grupal incluye 2 sesiones de 90 minutos, presenciales u online. Proporciona claves del mercado laboral y recomendaciones básicas para desarrollar una estrategia de búsqueda de empleo, diseño de CV y carta de presentación, perfil digital, proceso de selección y búsqueda de oportunidades. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/orientacion-profesional-2/)."]
+    },
+    {
+      "tag": "seleccion colegios",
+      "patterns": ["Selección de colegios", "Colegios en el extranjero", "Colegios en España"],
+      "responses": ["Ofrecemos servicios para seleccionar colegios tanto en el extranjero como en España. Ayudamos a encontrar el colegio que mejor se ajuste a tus necesidades y objetivos académicos. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/seleccion-colegios-espana-2/)."]
+    },
+    {
+      "tag": "seleccion universidades",
+      "patterns": ["Selección de universidades", "Universidades en España", "Universidades en el extranjero"],
+      "responses": ["Ofrecemos servicios para seleccionar universidades tanto en España como en el extranjero. Ayudamos a encontrar la universidad que mejor se ajuste a tus intereses y objetivos académicos. ¿Te gustaría más información? Más información sobre universidades en España [aquí](https://beyondeducation.es/orientacion-universitaria-en-espana/) y sobre universidades en el extranjero [aquí](https://beyondeducation.es/estudiar-en-el-extranjero-grados-y-postgrados/)."]
+    },
+    {
+      "tag": "preparacion examenes",
+      "patterns": ["Preparación de exámenes", "Ayuda con exámenes", "Preparar exámenes"],
+      "responses": ["Ofrecemos servicios de preparación de exámenes para ayudarte a obtener los mejores resultados posibles. ¿Te gustaría más información?", "Nuestros servicios de preparación de exámenes te ayudarán a obtener los mejores resultados. Ofrecemos programas adaptados a tus necesidades, con material de estudio, clases prácticas y apoyo personalizado. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/preparacion-examenes/)."]
+    },
+    {
+      "tag": "campamentos",
+      "patterns": ["Campamentos", "Campamentos de verano", "Quiero ir a un campamento"],
+      "responses": ["Ofrecemos una variedad de campamentos para jóvenes de 7 a 19 años, incluyendo campamentos de multiaventura, inmersión en el idioma, deportes y cursos de monitores. Los campamentos están disponibles en países como España, Reino Unido, Estados Unidos y Canadá. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/campamentos-verano/)."]
+    },
+    {
+      "tag": "cursos preuniversitarios",
+      "patterns": ["Cursos preuniversitarios", "Programas de verano preuniversitarios", "Quiero hacer un curso preuniversitario"],
+      "responses": ["Los cursos preuniversitarios de verano son programas ofrecidos en diferentes universidades o instituciones educativas de prestigio. Están dirigidos a estudiantes de 14 a 18 años y permiten la exploración de intereses académicos y profesionales, además de tener un primer contacto con la vida universitaria. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/cursos-preuniversitarios-verano/)."]
+    },
+    {
+      "tag": "voluntariado",
+      "patterns": ["Voluntariado", "Quiero hacer voluntariado", "Voluntariado en España"],
+      "responses": ["Ofrecemos programas de voluntariado en colaboración con diferentes organizaciones, dirigidos a jóvenes de 14 a 25 años. Estas experiencias te permitirán crecer y desarrollar competencias emocionales y profesionales. Los programas están disponibles en España y otros países europeos. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/hacer-voluntariado-espana/)."]
+    },
+    {
+      "tag": "desarrollo personal",
+      "patterns": ["Desarrollo personal", "Cursos de desarrollo personal", "Quiero mejorar mis habilidades"],
+      "responses": ["Ofrecemos cursos y charlas para desarrollar habilidades de comunicación, negociación, liderazgo, gestión del tiempo y más. Estos cursos están dirigidos tanto a jóvenes como a padres. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/desarrollo-personal-cursos/)."]
+    },
+    {
+      "tag": "colegios extranjero",
+      "patterns": ["Colegios en el extranjero", "Quiero estudiar en el extranjero"],
+      "responses": ["Te ayudamos a seleccionar colegios en el extranjero que se adapten a tu perfil y objetivos académicos. Trabajamos con una variedad de instituciones en países como Reino Unido, Estados Unidos, Canadá, entre otros. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/estudiar-en-el-extranjero/)."]
+    },
+    {
+      "tag": "colegios españa",
+      "patterns": ["Colegios en España", "Quiero estudiar en un colegio en España"],
+      "responses": ["Ofrecemos servicios de selección de colegios en España, adaptándonos a tu perfil y necesidades académicas. ¿Te gustaría más información sobre este servicio? Encuentra más información [aquí](https://beyondeducation.es/seleccion-colegios-espana-2/)."]
+    },
+    {
+      "tag": "universidades españa",
+      "patterns": ["Universidades en España", "Quiero estudiar en una universidad en España"],
+      "responses": ["Te ayudamos a seleccionar la mejor universidad en España para tus estudios de grado o postgrado. Analizamos tu perfil y objetivos para ofrecerte las opciones más adecuadas. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/orientacion-universitaria-en-espana/)."]
+    },
+    {
+      "tag": "universidades extranjero",
+      "patterns": ["Universidades en el extranjero", "Quiero estudiar en una universidad en el extranjero"],
+      "responses": ["Ofrecemos servicios de selección de universidades en el extranjero, ayudándote a encontrar la institución y el programa que mejor se adapten a tus intereses y metas académicas. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/estudiar-en-el-extranjero-grados-y-postgrados/)."]
+    },
+    { "tag": "voluntariados",
+      "patterns": ["tipo de voluntariados", "cuantos voluntariados hay", "que voluntariados hay", "qué voluntariados hay?"],
+      "responses": ["Contamos con voluntariados de verano, voluntariados de transformación, voluntariados en África y voluntariados juveniles en Kamarata ", "Tenemos programas de verano, de transformación, voluntariados en África y en Kamarata"]
+
+    },
+    { "tag": "voluntariados",
+      "patterns": ["cuentame acerca de los voluntariados de verano", "hablame de los programas de verano", "summer volunteer program", "quiero saber acerca de los voluntariados de verano"],
+      "responses": [" Se trata de voluntariados de 2, 3, 4 o 6 semanas de duración, que te da la oportunidad de viajar a Costa Rica, Ecuador o Panamá para explorar un tema que te apasione. ", "Son programas que te sumergirán en la producción de café, la adaptación al cambio climático y la conservación en Costa Rica, la restauración de ecosistemas y los derechos indígenas en Ecuador, o la conservación impulsada por la comunidad en Panamá."]
+
+    },
+    { "tag": "voluntariados",
+      "patterns": ["a donde me puedo ir de voluntariado en verano", "lugares de los programas de verano de voluntariado", "summer volunteer program", "destinos de los voluntariados de verano"],
+      "responses": [" Tenemos programas en Costa Rica, Ecuador y Panamá ", "Contamos con programas en Costa Rica de 2 a 9 semanas, en Ecuador de 3 a 6 semanas, y en Panamá de 2 a 3 semanas."]
+
+    },
+
+    
+    {
+      "tag": "tipos_voluntariados",
+      "patterns": [
+        "tipo de voluntariados",
+        "cuántos voluntariados hay",
+        "qué voluntariados hay",
+        "qué tipos de programas de voluntariado tienen"
+      ],
+      "responses": [
+        "Contamos con los siguientes tipos de voluntariados: voluntariados de verano, voluntariados de transformación, voluntariados en África y voluntariados juveniles en Kamarata."
+      ]
+    },
+    
+    
+    {
+      "tag": "voluntariados_transformacion",
+      "patterns": [
+        "qué es un voluntariado transformador",
+        "háblame del voluntariado de transformación",
+        "qué incluye el programa de voluntariado transformador",
+        "voluntariado de transformación"
+      ],
+      "responses": [
+        "El voluntariado de transformación se enfoca en la reducción del impacto ambiental a través del trabajo con comunidades locales en varios países. Se especializa en temas como la conservación ambiental, la adaptación al cambio climático y el desarrollo sostenible."
+      ]
+    },
+    {
+      "tag": "voluntariados_africa",
+      "patterns": [
+        "cuéntame acerca de los voluntariados en África",
+        "háblame de los programas en África",
+        "quiero saber acerca de los voluntariados en África",
+        "programas de voluntariado en África"
+      ],
+      "responses": [
+        "Los voluntariados en África incluyen programas en países como Kenia, Ghana, y Tanzania. Los proyectos abarcan desde conservación de la vida silvestre, apoyo en escuelas locales, hasta actividades culturales con las comunidades locales."
+      ]
+    },
+    {
+      "tag": "voluntariados_juveniles_kamarata",
+      "patterns": [
+        "cuéntame acerca de los voluntariados juveniles en Kamarata",
+        "háblame de los programas en Kamarata",
+        "quiero saber acerca de los voluntariados juveniles en Kamarata",
+        "programas de voluntariado juvenil en Kamarata"
+      ],
+      "responses": [
+        "El voluntariado juvenil en Kamarata, Venezuela, se enfoca en el turismo sostenible y el desarrollo comunitario. Los participantes dormirán en hamacas y trabajarán en proyectos de conservación y educación junto con la comunidad indígena local."
+      ]
+    },
+    {
+      "tag": "duracion_voluntariados",
+      "patterns": [
+        "cuánto duran los programas de voluntariado",
+        "duración de los voluntariados",
+        "qué duración tienen los voluntariados",
+        "cuáles son las duraciones de los programas"
+      ],
+      "responses": [
+        "Los programas de voluntariado tienen duraciones variables: voluntariados de verano pueden ser de 2, 3, 4 o 6 semanas, los programas transformadores suelen durar 1 semana, y los programas juveniles en Kamarata duran 12 días."
+      ]
+    },
+    {
+      "tag": "edades_voluntariados",
+      "patterns": [
+        "qué edades pueden participar en los voluntariados",
+        "edades permitidas para los programas de voluntariado",
+        "qué rango de edades aceptan para los voluntariados",
+        "edades de los voluntarios"
+      ],
+      "responses": [
+        "Los programas de voluntariado están disponibles para jóvenes de 13 a 19 años para los programas de verano y preuniversitarios, de 13 a 22 años para los programas transformadores, y mayores de 14 años para los programas en África y Kamarata."
+      ]
+    },
+    {
+      "tag": "costo_voluntariados",
+      "patterns": [
+        "cuánto cuesta un programa de voluntariado",
+        "precio de los voluntariados",
+        "cuáles son los costos de los programas de voluntariado",
+        "precios de los voluntariados"
+      ],
+      "responses": [
+        "Los costos de los programas de voluntariado varían según la duración y la ubicación. Por ejemplo, los programas de verano oscilan entre $4,075 y $6,275 dependiendo de la duración, los programas en África cuestan alrededor de $4,900 CHF por semana, y el voluntariado juvenil en Kamarata tiene un costo de 4,300€."
+      ]
+    },
+    {
+      "tag": "incluye_voluntariados",
+      "patterns": [
+        "qué incluye el programa de voluntariado",
+        "qué está incluido en los voluntariados",
+        "qué servicios están incluidos en los programas",
+        "qué cubren los voluntariados"
+      ],
+      "responses": [
+        "Los programas incluyen alojamiento, comidas, transporte dentro del país, excursiones, y en algunos casos, seguros de salud y de viaje. No incluyen billetes de avión, transporte desde/hacia el aeropuerto, visas (si es necesario), vacunas y exámenes médicos, dinero de bolsillo, y seguros de salud y viaje."
+      ]
+    },
+    {
+      "tag": "actividades_voluntariados",
+      "patterns": [
+        "qué actividades se realizan en los voluntariados",
+        "actividades de los programas de voluntariado",
+        "qué tipo de actividades hacen los voluntarios",
+        "actividades en los programas"
+      ],
+      "responses": [
+        "Las actividades varían según el programa. Pueden incluir trabajo en proyectos de conservación, actividades educativas, visitas culturales, deportes, y más. Por ejemplo, en el programa de verano en Costa Rica, puedes participar en la producción de café y conservación ambiental; en Kamarata, puedes involucrarte en actividades culturales y deportivas con la comunidad indígena."
+      ]
+    },
+    {
+      "tag": "contacto_voluntariados",
+      "patterns": [
+        "cómo puedo contactar para más información",
+        "quiero más información, cómo los contacto",
+        "dónde puedo obtener más información",
+        "quiero hablar con alguien sobre los voluntariados"
+      ],
+      "responses": [
+        "Puedes contactarnos para más información al +34 665 816 673, enviar un correo electrónico a fiorella@beyondeducation.es. También puedes seguirnos en Instagram @beyond_education_es."
+      ]
+    },
+    {
+        "tag": "campamentos_generales",
+        "patterns": [
+            "Cuéntame sobre los campamentos de verano",
+            "¿Qué campamentos ofrecen?",
+            "Información general sobre los campamentos",
+            "Detalles de los campamentos de verano", "que campamentos ofreceis"
+        ],
+        "responses": [
+            "Ofrecemos una variedad de campamentos en diferentes países con actividades y programas únicos para cada grupo de edad."
+        ]
+    },
+    {
+        "tag": "campamento_deportes_londres",
+        "patterns": [
+            "¿Qué actividades se ofrecen en el campamento de deportes por día en Londres?",
+            "Detalles del campamento de deportes por día en Londres",
+            "Precio del campamento de deportes por día en Londres",
+            "Horario del campamento de deportes por día en Londres"
+        ],
+        "responses": [
+            "El campamento de deportes por día en Londres ofrece diversas actividades deportivas. Para más detalles, puedes consultar nuestro catálogo [aquí](https://beyondeducation.es/wp-content/uploads/2024/02/Catalogo-Camps-2024_compressed.pdf)."
+        ]
+    },
+    {
+        "tag": "academia_ingles_west_sussex",
+        "patterns": [
+            "¿Qué incluye la academia de inglés y actividades en West Sussex?",
+            "Fechas de la academia de inglés y actividades en West Sussex",
+            "Precio de la academia de inglés y actividades en West Sussex",
+            "Ubicación de la academia de inglés y actividades en West Sussex"
+        ],
+        "responses": [
+            "La academia de inglés y actividades en West Sussex incluye clases de inglés y una variedad de actividades. Las fechas y precios están disponibles en nuestro catálogo [aquí](https://beyondeducation.es/wp-content/uploads/2024/02/Catalogo-Camps-2024_compressed.pdf)."
+        ]
+    },
+    {
+        "tag": "academia_ingles_deportes_crawley",
+        "patterns": [
+            "¿Qué incluye la academia de inglés y deportes en Crawley?",
+            "Fechas de la academia de inglés y deportes en Crawley",
+            "Precio de la academia de inglés y deportes en Crawley",
+            "Ubicación de la academia de inglés y deportes en Crawley"
+        ],
+        "responses": [
+            "La academia de inglés y deportes en Crawley combina clases de inglés con actividades deportivas. Consulta nuestro catálogo para fechas y precios [aquí](https://beyondeducation.es/wp-content/uploads/2024/02/Catalogo-Camps-2024_compressed.pdf)."
+        ]
+    },
+    {
+        "tag": "academia_ingles_futbol_buckinghamshire",
+        "patterns": [
+            "¿Qué incluye la academia de inglés y fútbol en Buckinghamshire?",
+            "Fechas de la academia de inglés y fútbol en Buckinghamshire",
+            "Precio de la academia de inglés y fútbol en Buckinghamshire",
+            "Ubicación de la academia de inglés y fútbol en Buckinghamshire"
+        ],
+        "responses": [
+            "La academia de inglés y fútbol en Buckinghamshire ofrece entrenamiento de fútbol junto con clases de inglés. Más detalles en nuestro catálogo [aquí](https://beyondeducation.es/wp-content/uploads/2024/02/Catalogo-Camps-2024_compressed.pdf)."
+        ]
+    },
+    {
+        "tag": "academia_ingles_multi_dorset",
+        "patterns": [
+            "¿Qué incluye la academia de inglés y multi actividades en Dorset?",
+            "Fechas de la academia de inglés y multi actividades en Dorset",
+            "Precio de la academia de inglés y multi actividades en Dorset",
+            "Ubicación de la academia de inglés y multi actividades en Dorset"
+        ],
+        "responses": [
+            "La academia de inglés y multi actividades en Dorset combina clases de inglés con una variedad de actividades. Consulta el catálogo para más información [aquí](https://beyondeducation.es/wp-content/uploads/2024/02/Catalogo-Camps-2024_compressed.pdf)."
+        ]
+    },
+    {
+        "tag": "informacion",
+        "patterns": [
+            "informacion",
+            "quiero informacion"
+            
+        ],
+        "responses": [
+            "¿Puedes ser más específico? ¿Sobre qué servicio deseas más información?"
+        ]
+    },
+    {
+        "tag": "consulta",
+        "patterns": [
+            "como puedo contactar con vosotros",
+            "quiero hablar con vosotros"
+            
+        ],
+        "responses": [
+            "Puedes contactarnos para más información al +34 665 816 673, enviar un correo electrónico a fiorella@beyondeducation.es."
+        ]
+    }, 
+    {
+        "tag": "orientacion",
+        "patterns": [
+            "estoy interesada en orientacion",
+            "estoy interesado en orientacion "
+            
+        ],
+        "responses": [
+            "¡Genial! Tenemos dos tipos de orientaciones. La orientación vocacional es un proceso completo y personalizado que te lleva a descubrir tu vocación y orientar tus decisiones para sacar tu máximo potencial. Y si estás buscando empleo, la orientación profesional es un proceso que facilita tu transición al mundo laboral."
+        ]
+    },
+    {
+        "tag": "orientacion vocacional",
+        "patterns": [
+            "estoy interesada en orientacion vocacional",
+            "estoy interesado en orientacion vocacional",
+            "me interesa la orientacion vocacional"
+            
+        ],
+        "responses": [
+            "Contamos con varios perfiles de orientación, escolar, universitario y profesional. El escolar va dirigido a estudiantes de 13-16 años (ESO y Bachillerato), el universitario va dirigido a estudiantes de 17 a 25 años. Y el profesional va dirigido a adultos. Cuéntanos, ¿cuál es tu caso?"
+        ]
+    },
+    {
+        "tag": "perfil escolar",
+        "patterns": [
+            "estoy interesada en perfil escolar",
+            "perfil escolar",
+            "me interesa el perfil escolar"
+            
+        ],
+        "responses": [
+            "Te ayudamos a elegir el sistema académico y el colegio que sacará todo tu potencial, además del itinerario de bachillerato español, las asignaturas de IB o A levels que mejor se ajusten a tu perfil y a tus objetivos académicos. Contacta con nosotros [aquí] (https://beyondeducation.es/contacto/)"
+        ]
+    }, 
+    {
+        "tag": "perfil universitario",
+        "patterns": [
+            "estoy interesada en perfil universitario",
+            "perfil universitario",
+            "me interesa el perfil universitario"
+            
+        ],
+        "responses": [
+            "Te ayudamos a elegir tu carrera universitaria, programa de formación profesional o el postgrado, así como la mejor universidad para ti en el o los países de interés. Contacta con nosotros [aquí] (https://beyondeducation.es/contacto/)"
+        ]
+    },
+    {
+        "tag": "perfil profesional",
+        "patterns": [
+            "estoy interesada en perfil profesional",
+            "perfil profesional",
+            "me interesa el perfil profesional"
+            
+        ],
+        "responses": [
+            "Te ayudamos a reorientar tu recorrido profesional y a construir un camino laboral satisfactorio y que te permita realizarte. Te orientamos en la identificación de las áreas profesionales óptimas según tu perfil. Contacta con nosotros [aquí] (https://beyondeducation.es/contacto/)"
+        ]
+    },
+    {
+        "tag": "orientacion profesional",
+        "patterns": [
+            "estoy interesada en orientacion profesional",
+            "estoy interesado en orientacion profesional",
+            "me interesa la orientacion profesional"
+            
+        ],
+        "responses": [
+            "Contamos con dos tipos de orientación profesional, acompañamiento individual y talleres grupales. Especifica qué tipo de orientación te interesa"
+        ]
+    },
+    {
+        "tag": "acompañamiento individual",
+        "patterns": [
+            "estoy interesada en acompañamiento individual",
+            "estoy interesado en acompañamiento individual",
+            "me interesa el acompañamiento individual",
+            "acompañamiento individual"
+            
+        ],
+        "responses": [
+            "Se trata de 6 sesiones de 60 minutos, con posibilidad de ser presencial u online, adaptándonos a tus necesidades. Diseñaremos juntos un plan de acción que te acercará a tus objetivos. Te llevarás tu objetivo profesional definido, tu CV, carta de presentación y perfil digital, una estrategia de búsqueda de empleo y preparación de entrevistas. Contacta con nosotros [aquí] (https://beyondeducation.es/contacto/)"
+        ]
+    },
+    {
+        "tag": "taller grupal",
+        "patterns": [
+            "estoy interesada en taller grupal",
+            "estoy interesado en taller grupal",
+            "me interesa el taller grupal",
+            "taller grupal"
+            
+        ],
+        "responses": [
+            "Se trata de 2 sesiones de 90 minutos, con posibilidad de ser presencial u online, adaptándonos a tus necesidades. Te proporcionará las claves del mercado laboral y las recomendaciones básicas para desarrollar una estrategia de búsqueda de empleo. Te llevarás tu objetivo profesional definido, tu CV, carta de presentación y perfil digital, una estrategia de búsqueda de empleo y oportunidades. Contacta con nosotros [aquí] (https://beyondeducation.es/contacto/)"
+        ]
+    },
+    {
+        "tag": "mas informacion",
+        "patterns": [
+            "mas informacion",
+            "quiero mas informacion"
+            
+            
+        ],
+        "responses": [
+            "Para poder tener una mejor interacción, y ofrecerte información relevante. Especifica de qué servicio requieres más información, por favor, introduce información seguido del servicio que te interesa. ¡Gracias!"
+        ]
+    },
+    {
+      "tag": "pregunta general",
+      "patterns": [
+          "que es servicio personalizado",
+          "qué es servicio personalizado",
+          "que significa servicio personalizado",
+          "qué significa servicio personalizado"
+          
+          
+      ],
+      "responses": [
+          "En Beyond Education tenemos un proceso estándar para cada servicio que contrates con nosotros. Sin embargo, en función de tus necesidades ajustaremos lo que sea necesario para conseguir alcanzar el objetivo final del servicio prestado. Es por esto que resulta importante recoger información del alumno mediante entrevistas o formularios antes de iniciar el trabajo conjunto. Somos una consultora cercana y flexible que te ayudará a encontrar tu mejor versión."
+      ]
+    },
+    {
+      "tag": "pregunta general",
+      "patterns": [
+          "por que elegir vuestra empresa",
+          "por qué elegir vuestra empresa",
+          "por qué elegir Beyond Education frente a otras consultoras educativas",
+          "por que elegir Beyond Education frente a otras consultoras educativas",
+          "por qué vosotros y no otros",
+          "por que elegiros"
+          
+          
+      ],
+      "responses": [
+          "Tal y como nuestro nombre lo dice, en Beyond Education vamos un paso más allá. Queremos que desarrolles lo académico sin dejar a un lado tu desarrollo socioemocional y tu bienestar. Abordamos a cada chico o chica como un ser integral, nos aproximamos a cada persona con una visión 360º. Incluimos a la familia en todo el proceso."
+      ]
+    },
+    {
+      "tag": "pregunta general",
+      "patterns": [
+          "estoy fuera de españa, puedo tener sus servicios",
+          "estoy fuera de españa, pueden ofrecerme sus servicios",
+          "no estoy en españa, habría algún problema",
+          "no estoy en españa, habria algun problema",
+          "si no estoy en españa, pasa algo"
+          
+          
+          
+      ],
+      "responses": [
+          "No hay problema, puedes acceder sin problema a nuestros servicios. Desde nuestros inicios hemos trabajado en modalidad online, a través de plataformas de videollamadas. Pero, si estás en Madrid o tienes pensado visitarnos pronto, también podemos atenderte en modalidad presencial en nuestras oficinas en Madrid (C/Castelló, 128)."
+      ]
+    },
+    {
+      "tag": "perfil vocacional",
+      "patterns": [
+          "en cuanto tiempo se realiza el perfil vocacional",
+          "en cuánto tiempo se realiza el perfil vocacional",
+          "cuánto tarda el perfil vocacional",
+          "cuánto tarda el perfil vocacional"
+         
+          
+          
+          
+      ],
+      "responses": [
+          "En primer lugar el tiempo variará en función del tipo de perfil vocacional elegido (Express o 360º). Desde el inicio del proceso de evaluación y la entrega y discusión de resultados pueden pasar en 3 y 5 semanas."
+      ]
+    },
+    {
+      "tag": "perfil vocacional",
+      "patterns": [
+          "en qué consiste el proceso de orientación vocacional",
+          "en que consiste el proceso de orientacion vocacional",
+          "de que trata el proceso de orientacion laboral",
+          "de qué trata el proceso de orientación laboral",
+          "de qué va el proceso de orientación laboral",
+          "de que va el proceso de orientación laboral"
+
+          
+      ],
+      "responses": [
+          "El proceso variará en función del tipo de perfil seleccionado. El joven desempeñará un rol activo en todo momento, y, tanto el psicólogo como el consultor, ayudarán a descubrir, aclarar e informar. En líneas generales el proceso consiste en los siguientes pasos: entrevistas a profundidad con el estudiante, entrevistas con los padres del estudiantes, administración de test psicométricos y test proyectivos, reunión de discusión de resultados con psicólogo y consultor académico y construcción del itinerario formativo."
+      ]
+    },
+    {
+      "tag": "perfil vocacional",
+      "patterns": [
+          "en qué consiste el proceso de orientación vocacional",
+          "en que consiste el proceso de orientacion vocacional",
+          "de que trata el proceso de orientacion laboral",
+          "de qué trata el proceso de orientación laboral",
+          "de qué va el proceso de orientación laboral",
+          "de que va el proceso de orientación laboral"
+
+          
+      ],
+      "responses": [
+          "El proceso variará en función del tipo de perfil seleccionado. El joven desempeñará un rol activo en todo momento, y, tanto el psicólogo como el consultor, ayudarán a descubrir, aclarar e informar. En líneas generales el proceso consiste en los siguientes pasos: entrevistas a profundidad con el estudiante, entrevistas con los padres del estudiantes, administración de test psicométricos y test proyectivos, reunión de discusión de resultados con psicólogo y consultor académico y construcción del itinerario formativo."
+      ]
+    },
+    {
+      "tag": "perfil vocacional",
+      "patterns": [
+          "qué me llevo al terminar el proceso de orientación laboral",
+          "qué me llevaré del proceso de orientación laboral"
+           
+      ],
+      "responses": [
+          "Te llevarás un perfil vocacional en donde recogemos de manera detallada toda la información que hemos trabajado junto a ti. Puntualizamos fortalezas, motivaciones, rasgos de personalidad, habilidades e intereses profesionales. Además, nuestros consultores académicos de la mano de nuestros psicólogos, te propondrán grados universitarios, cursos de formación profesional, másteres y/o estudios de postgrado que te ayudarán a planificar tu futuro profesional y convertirte en tu mejor versión. Y por último, te llevarás un itinerario formativo o plan de acción detallado que te ayudará a planificar los próximos pasos que te acercarán a alcanzar tu meta. "
+      ]
+    },
+    {
+      "tag": "perfil vocacional",
+      "patterns": [
+          "por qué incluyen a los padres en el proceso de orientación vocacional",
+          "por qué los padres están en el proceso de orientación vocacional"
+           
+      ],
+      "responses": [
+          "Aún cuando la elección vocacional es una elección individual que parte de un proceso de reflexión que debe realizar el chico o la chica, para nosotros es de gran valor incluir a la familia en este proceso de autoconocimiento del joven. El contexto social y familiar en el que ha crecido, las elecciones profesionales que se han hecho en la familia, las expectativas de los padres, entre otras cosas, son elementos que nos permitirán trabajar con él y acompañarlo en su proceso. Además, podemos ayudar a los padres a acompañar a sus hijos en el momento que atraviesan de forma asertiva.  Es importante señalar que la decisión de incluir o no incluir a los padres se tomará en función de la edad del chico, así como de algunos elementos particulares de la situación. "
+      ]
+    },
+    {
+      "tag": "perfil vocacional",
+      "patterns": [
+          "Y si mis intereses han cambiado durante los siguientes años a haber realizado el perfil vocacional",
+          "Qué pasa si cambio de intereses después de realizar el perfil vocacional"
+           
+      ],
+      "responses": [
+          "Para ello contamos con sesiones de seguimiento. Dependiendo de las inquietudes que presentes y del tiempo transcurrido desde la realización del perfil vocacional, podrás trabajar con el psicólogo o con el consultor académico. De manera conjunta, revisarán el perfil y se evaluará la pertinencia de administrar nuevos test psicométricos o integrar las reflexiones que han surgido posteriormente. Recuerda que la orientación vocacional es un proceso dinámico que se alimenta de la elaboración de nuevas experiencias vividas. "
+      ]
+    },
+    {
+      "tag": "perfil vocacional",
+      "patterns": [
+          "Cuándo es mejor iniciar un proceso de orientación vocacional",
+          "Cuál es el momento ideal para iniciar un proceso de orientación vocacional"
+           
+      ],
+      "responses": [
+          "La elección vocacional es resultado de un proceso gradual, que inicia desde muy temprano. No obstante, entre los 15 y 17 años es un buen momento para abrir un espacio de reflexión sobre tu proyecto profesional, pues empezarás a tomar decisiones que impactarán tu futuro (asignaturas a elegir, tipo de bachillerato, universidades a aplicar). Conocer más sobre tus motivaciones, deseos, intereses, capacidades será de gran ayuda en este camino que se abre frente a ti. "
+      ]
+    },
+    {
+      "tag": "asesoramiento universitario",
+      "patterns": [
+          "qué es el asesoramiento universitario",
+          "en qué consiste el asesoramiento universitario"
+           
+      ],
+      "responses": [
+          "El asesoramiento universitario es un servicio que puede incluir diferentes partes: perfil vocacional, en caso de que no tengas claro la carrera a estudiar, propuesta de universidades y aplicación a universidades "
+      ]
+    },
+    {
+      "tag": "asesoramiento universitario",
+      "patterns": [
+          "Puedo contratar por separado la propuesta universitaria o el acompañamiento a la aplicación",
+          "puedo contratar por un lado la propuesta universitaria y el acompañamiento a la aplicación"
+           
+      ],
+      "responses": [
+          "Si, son servicios independientes dentro del asesoramiento universitario, por lo que podrás contratarlos de manera independiente. Sin embargo, si contratas el pack de asesoramiento universitario que incluye estos dos servicios, disfrutarás de un descuento. Socilita aquí nuestros precios [aqui] (https://beyondeducation.es/contacto/) "
+      ]
+    },
+    {
+      "tag": "carreras universitarias",
+      "patterns": [
+          "a cuántas carreras puedo aplicar",
+          " cuántas carreras puedo solicitar"
+           
+      ],
+      "responses": [
+          "Esto dependerá del país en que quieras aplicar. En el caso de España no tienes límite de aplicaciones, al igual que con Estados Unidos. "
+      ]
+    },
+    {
+      "tag": "carreras universitarias",
+      "patterns": [
+          "cuál es el momento ideal para recibir asesoramiento universitario",
+          "cuál es el momento de recibir asesoramiento universitario",
+          "cuándo es mejor recibir asesoramiento univeristario",
+          "cuál es el mejor momento de recibir asesoramiento universitario"
+           
+      ],
+      "responses": [
+          "Cuanto antes, mejor. El tiempo de aplicación variará dependiendo del país al que quieras aplicar, sin embargo recomendamos empezar a recibir el asesoramiento universitario al menos un año antes de la fecha de inicio del grado, de modo que puedas explorar las diferentes opciones de grados que ofertan en cada país, sus requisitos y proceso de aplicación, para luego comenzar con la preparación del mismo. "
+      ]
+    },
+    {
+      "tag": "asesoramiento universitario",
+      "patterns": [
+          "cuántas sesiones de trabajo incluye el asesoramiento universitario",
+          "cuántas sesiones incluye el asesoramiento universitario",
+          "cuántas sesiones tiene el asesoramiento univeristario",
+          "cuántas sesiones me recomiendas de asesoramiento universitario"
+           
+      ],
+      "responses": [
+          "Va a depender del estudiante, el país que desea aplicar y los requerimientos del grado en cuestión. Al inicio del proceso se planifican las sesiones necesarias. En nuestra experiencia son un mínimo de 4 sesiones/5 sesiones. "
+      ]
+    },
+    {
+      "tag": "homologación universidad",
+      "patterns": [
+          "os encargáis de la convalidación de notas si quiero estudiar en españa",
+          "os encargáis de la homologación y traducción de notas si quiero estudiar en españa",
+          "quien se encarga de la homologación y traducción de las notas si quiero estudiar en españa"
+         
+           
+      ],
+      "responses": [
+          "Este servicio no es ofrecido directamente por Beyond Education, sin embargo te pondremos en contacto con empresas especializadas en esta materia. "
+      ]
+    },
+    {
+      "tag": "preparacion examenes",
+      "patterns": [
+          "nos ayudáis a preparar exámenes de admisión y la entrevista de la universidad ",
+          "me ayudáis a preparar los exámenes de admisión de la universidad",
+          "me ayudáis a preparar las entrevistas de admisión de la universidad"
+         
+           
+      ],
+      "responses": [
+          "Si, en función del examen requerido, te preparamos en Beyond Education o te ponemos en contacto con especialistas que te prepararán para las pruebas de admisión, así como para la entrevista. "
+      ]
+    },
+    {
+      "tag": "certificacion ingles",
+      "patterns": [
+          "nos ayudáis a preparar la certificación de inglés ",
+          "me ayudáis a conseguir la certificación de inglés"
+         
+           
+      ],
+      "responses": [
+          "Si, te ponemos en contacto con tutores para que te ayuden a preparar el examen. Además, te asesoramos sobre el examen y dónde registrarte. "
+      ]
+    },
+    {
+      "tag": "ingles",
+      "patterns": [
+          "qué nivel de inglés necesito para estudiar en estados unidos ",
+          "qué certificación de inglés necesito para estudiar en la universidad en estados unidos"
+         
+           
+      ],
+      "responses": [
+          "Esto dependerá de la universidad, algunas exigen 100 puntos o más en el TOEFL y otras 80, 70 o incluso 60, y para los IELTS entre 6 y 8 puntos. En general dependerá de lo demandada y competitiva que sea la universidad. "
+      ]
+    },
+    {
+      "tag": "ingles",
+      "patterns": [
+          "qué nivel de inglés necesito para estudiar en uk ",
+          "qué certificación de inglés necesito para estudiar en la universidad en uk",
+          "qué nivel de inglés necesito para estudiar en reino unido"
+         
+           
+      ],
+      "responses": [
+          "Las universidades tienen requerimientos específicos de inglés para cada carrera. En general, el nivel está alrededor de 6.5 en el IELTS (o 176 en Cambridge English Score), con algunos requisitos mínimos en cada componente del examen. Sin embargo, en ciertas carreras como derecho o medicina, los requerimientos de inglés pueden llegar a ser de 7.0 o más, con requisitos mínimos específicos en cada componente. En la propuesta de universidades siempre incluimos tanto los requisitos académicos como el nivel de inglés requerido. El requisito de inglés no es necesario a la hora de aplicar, pero si una vez admitido. Algunas universidades ofrecen cursos de inglés previos a la incorporación si el estudiante no cumple con los requisitos exigidos. "
+      ]
+    },
+    {
+      "tag": "ingles",
+      "patterns": [
+          "qué nivel de inglés necesito para estudiar en holanda ",
+          "qué certificación de inglés necesito para estudiar en la universidad en holanda"
+         
+           
+      ],
+      "responses": [
+          "Igual que en Reino Unido, el requerimiento de inglés varía dependiendo de la carrera y universidad. El rango general está entre 6.0 a 7.0 en IELTS, con requisitos específicos para cada componente del examen. "
+      ]
+    },
+    {
+      "tag": "beca academica",
+      "patterns": [
+          "gestionáis becas académicas ",
+          "me ayudas a optar a becas académicas",
+          "incluye la gestión de beca académica"
+         
+           
+      ],
+      "responses": [
+          "Si, entre nuestros diversos servicios se encuentra el apoyo en la búsqueda de becas. Hay que tener en cuenta que los requisitos varían dependiendo del país y universidad de aplicación y que no podemos garantizar resultados. "
+      ]
+    },
+    {
+      "tag": "beca deportiva",
+      "patterns": [
+          "gestionáis becas deportivas ",
+          "me ayudas a optar a becas deportivas",
+          "incluye la gestión de beca deportiva"
+         
+           
+      ],
+      "responses": [
+          "En el caso de Estados Unidos, colaboramos con una empresa especializada en la búsqueda de becas para deportistas. Te pondremos en contacto con ellos y te guiaremos en el proceso. En este caso, nuestra recomendación es que estés federado en tú país o que compitas a un alto nivel. "
+      ]
+    },
+    {
+      "tag": "carta motivacion",
+      "patterns": [
+          "gestionáis cartas de motivación ",
+          "me ayudas a escribir la carta de motivación",
+          "me ayudarán a escribir la carta de motivación"
+         
+           
+      ],
+      "responses": [
+          "Al contratar el servicio completo de asesoramiento universitario para Holanda, Beyond Education ayuda para escribir la(s) carta(s) de motivación y se asegura que tu candidatura destaque del resto. "
+      ]
+    },
+    {
+      "tag": "cv",
+      "patterns": [
+          "gestionáis los curriculum vitae",
+          "me ayudas a escribir el cv",
+          "me ayudarán a hacer el curriculum"
+         
+           
+      ],
+      "responses": [
+          "En Beyond Education tenemos una guía muy útil para elaborar tu CV, te asesoramos en la construcción del mismo, su revisión y validación final "
+      ]
+    },
+    {
+      "tag": "alojamiento",
+      "patterns": [
+          "me ayudas a gestionar el alojamiento",
+          "ofrecéis alojamiento",
+          "me ayudarán a buscar alojamiento"
+         
+           
+      ],
+      "responses": [
+          "En Reino Unido las universidades ofrecen alojamiento. Esto se gestiona directamente con ellas, y por supuesto te podemos apoyar en esta parte del proceso si la requieres. En Holanda, en contadas excepciones, las universidades no ofrecen alojamiento, aunque algunas tienen viviendas reservadas u orientan sobre cómo conseguir alojamiento. En Beyond Education podemos ayudarte en la búsqueda de alojamiento. En Estados Unidos, las universidades ofrecen alojamiento. El sistema está pensado para que los estudiantes vivan por lo menos los dos primeros años en el campus, incluso en muchas universidades es obligatorio que así sea durante el primer año. Esa gestión se hace con la universidad pero os ayudamos a tomar decisiones informadas. En caso de decidir vivir fuera del campus, no podemos ayudarte con la búsqueda del alojamiento. "
+      ]
+    },
+    { 
+      "tag": "inglés",
+      "patterns": ["Me pedirán un nivel de inglés para cursar un programa preuniversitario",
+                   "Necesito tener buen nivel de inglés",
+                   "Tengo que saber inglés",
+                   "Qué nivel de inglés se pide"],
+      "responses": ["Si el curso es en inglés requerirás cierto nivel de inglés para seguir el ritmo de las clases. Algunos programas muy académicos exigen un diploma oficial tipo TOEFL o EILTS. Es importante conocer los requisitos de cada programa que también pueden incluir notas académicas y cartas de recomendación de profesores."]
+  }, 
+
+  { 
+    "tag": "edad preuniversitario",
+    "patterns": ["desde qué edad puedo cursar un curso preuniversitario",
+                 "a qué edad puedo empezar un curso preuniversitario",
+                 "cuál es el requisitio de edad para un curso preuniversitario",
+                 "qué edad necesito tener para empezar un curso preuniversitario"],
+    "responses": ["Puedes matricularte para cursar un curso preuniversitario desde los 14 años. Sin embargo, esto puede variar según el programa. "]
+  },
+
+  { 
+    "tag": "duración preuniversitario",
+    "patterns": ["qué duración tiene un curso preuniversitario",
+                 "cuánto dura un curso preuniversitario",
+                 "cuánto dura el programa preuniversitario",
+                 "en cuánto tiempo puedo hacer el curso preuniversitario"],
+    "responses": ["La mayoría de nuestros programas están diseñados para dos o cuatro semanas pero también tenemos programas de una semana."]
+  },
+
+  { 
+    "tag": "duración campamento verano",
+    "patterns": ["qué duración tiene un campamento de verano",
+                 "cuánto dura un campamento de verano"],
+    "responses": ["La duración varía según el tipo de campamento: desde una semana hasta 2 meses."]
+  },
+
+  { 
+    "tag": "billetes avión",
+    "patterns": ["me gestionan los billetes de avión",
+                 "podeis ayudarme con los billetes de avion",
+                 "cómo gestiono los billetes de avión",
+                 "cómo puedo organizar el viaje en avión"],
+    "responses": ["Nosotros no gestionamos los billetes, sin embargo podemos recomendar una agencia de viajes que lo organiza."]
+  },
+
+  { 
+    "tag": "campamento extranjero",
+    "patterns": ["cuál es la edad ideal para enviar a mi hijo a un campamento en el extranjero",
+                 "desde qué edad puede ir mi hijo a un campamento en el extranjero",
+                 "qué requisitos necesita cumplir mi hijo para ir a un campamento en el extranjero",
+                 "cuántos años tiene que tener mi hijo para ir a un campamento en el extranjero"],
+    "responses": ["La edad del niño depende mucho de si ya ha dormido fuera de casa, es tímido o va acompañado de hermanos. Por lo general, se recomiendan a partir de los 8 años. Nuestro asesoramiento es totalmente personalizado, para hacer nuestras recomendaciones siempre tomamos en cuenta circunstancias de cada niño e intentamos encontrar el campamento que mejor encaje con sus características y los objetivos buscados."]
+  },
+
+  { 
+    "tag": "edad campamentos",
+    "patterns": ["para qué edades van dirigidas los campamentos",
+                 "a qué edad puede ir mi hijo a un campamento",
+                 "cuántos años debe tener mi hijo para ir a un campamento",
+                 "a partir de qué edad puede ir mi hijo a los campamentos"],
+    "responses": ["La edad específica dependerá del campamento elegido. En general, los campamentos van dirigidos a niños a partir de 6 años hasta 18 años."]
+  },
+
+  { 
+    "tag": "visado",
+    "patterns": ["tengo que gestionar algún visado para hacer un curso en reino unido",
+                 "hace falta visado para cursar en reino unido",
+                 "necesito tramitar visado para estudiar en reino unido",
+                 "me van a pedir visado si quiero ir a reino unido"],
+    "responses": [" Para el Reino Unido es necesario un visado por períodos más largos de los 6 meses. El colegio “invita” al estudiante y los formularios los han de completar los padres así como realizar el pago del visado con un coste aproximado de 850 libras. A veces los colegios gestionan los visados a través de un servicio de consultoría externa. El visado cubre los costes de la seguridad social en el país durante la estancia del estudiante. En BE te podemos asistir a rellenar los formularios en cualquier punto del proceso o en cualquier otra duda."]
+  },
+
+  { 
+    "tag": "convalidación",
+    "patterns": ["me ayudarán en el proceso de convalidación",
+                 "cómo puedo hacer la convalidación",
+                 "qué necesito para hacer la convalidación",
+                 "cómo gestiono la convalidación"],
+    "responses": ["Te ponemos en contacto con empresas especializadas en gestionar los trámites de convalidación."]
+  },   
+
+  { 
+    "tag": "convalidar estudios",
+    "patterns": ["a la vuelta, ¿podré convalidar mis estudios?",
+                 "despúes del curso en el extranjero, ¿necesito convalidar mis estudios?",
+                 "tengo que convalidar mis estudios",
+                 "hace falta que convalide mis estudios"],
+    "responses": ["Hasta 4º de la ESO no es necesario pero a partir de este curso se han de convalidar."]
+  },    
+
+  { 
+    "tag": "edad extranjero",
+    "patterns": ["a qué edad puedo cursar un año escolar en el extranjero",
+                 "a qué edad puede ir mi hijo cursar un año escolar en el extranjero",
+                 "cuántos años debe tener mi hijo para ir a estudiar un año en el extranjero",
+                 "a partir de qué edad puede ir mi hijo a estudiar un año en el extranjero"],
+    "responses": ["Es recomendable a partir de los 10 años, siendo posible desde antes. Generalmente, los boarding schools comienzan a tener un número sustancial de alumnos con 11 años, los puntos de entrada son generalmente: 11+, 13+ y 16+ sin perjuicio de que admitan a alumnos en otros años."]
+  },   
+
+  { 
+    "tag": "essay",
+    "patterns": ["me ayudan en la preparación del essay que se requiere para aplicar en las universidades en estados unidos",
+                 "cómo hago el essay para aplicar en las universidades en estados unidos",
+                 "cómo se hace el essay para aplicar en las universidades en estados unidos",
+                 "qué necesito para hacer el essay requerido para aplicar en las universidades de estados unidos"],
+    "responses": ["El essay es uno de los elementos fundamentales en la aplicación. Trabajaremos juntos en la preparación y elaboración del mismo diseñando la estrategia del mismo y su construcción."]
+  },  
+
+  { 
+    "tag": "sat",
+    "patterns": ["me ayudan a preparar el sat (examen estandarizado para la admisión universitaria en estados unidos)",
+                 "me ayudan hago el sat",
+                 "me podéis orientar para hacer el sat",
+                 "me asesoran para hacer el sat (examen estandarizado para la admisión universitaria en estados unidos"],
+    "responses": ["Sí, te ayudaremos en la preparación del SAT y en comprender bien la metodología del examen. De esta manera llegarás con mucha más preparación y seguridad al examen."]
+  }, 
+
+  { 
+    "tag": "exito ingreso universidad",
+    "patterns": ["cuál es el porcentaje de éxito de ingreso a las universidades",
+                 "qué porcentaje de éxito hay en el ingreso a las universidades",
+                 "qué porcentaje de admisión tiene el ingreso a las universidades",
+                 "qué éxito hay a la hora de ingresar a la universidad"],
+    "responses": ["El porcentaje de éxito es de 100%, todos nuestros estudiantes han ingresado en alguna de sus opciones de interés. En ocasiones el estudiante no es admitido en su primera opción, sin embargo durante el asesoramiento nos hemos asegurado de contar con otras excelentes opciones que se adecuen a su perfil y expectativas."]
+  }, 
+
+  { 
+    "tag": "ayuda visa",
+    "patterns": ["me ayudarán a gestionar la visa",
+                 "cómo gesitono la visa",
+                 "qué necesito para hacer mi visa",
+                 "me podéis ayudar a tramitar mi visa"],
+    "responses": ["Reino Unido: Si eres miembro de la EU, te guiaremos sobre donde tienes que ir para empezar tu aplicación. Holanda: Los estudiantes de la UE no necesitan visa para entrar a Holanda o tramitar permiso de residencia. Estados Unidos: Te explicaremos los pasos a seguir para la solicitud de la visa y solucionaremos las dudas que tengas sobre el proceso"]
+    }
+   
+
+
+
+
+
+
+  ]
+}
+
+
+
+      
+  
