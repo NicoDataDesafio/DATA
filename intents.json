@@ -28,32 +28,32 @@
          "responses": ["Ofrecemos orientación vocacional para diferentes perfiles:\n1. Perfil vocacional ESCOLAR (13-16 años)\n2. Perfil vocacional UNIVERSITARIO (17-25 años)\n3. Perfil vocacional PROFESIONAL (adultos)\n¿Cuál te interesa?"]
     },
     { 
-          "tag": "perfil escolar",
+          "tag": "perfil escolar_8",
           "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
           "responses": ["Para estudiantes de 13 a 16 años, ayudamos a elegir el sistema académico y el colegio que sacará todo tu potencial, además del itinerario de bachillerato español, las asignaturas de IB o A levels que mejor se ajusten a tu perfil y objetivos académicos. ¿Te gustaría más información?"]
     },
     { 
-        "tag": "perfil universitario",
+        "tag": "perfil universitario_9",
         "patterns": ["Perfil universitario", "Orientación para estudiantes de 17-25 años", "Vocación universitaria"],
         "responses": ["Para estudiantes de 17 a 25 años, te ayudamos a elegir tu carrera universitaria, programa de formación profesional o postgrado, así como la mejor universidad para ti en el o los países de interés. ¿Te gustaría más información?"]
     },
     { 
-        "tag": "perfil profesional",
+        "tag": "perfil profesional_7",
         "patterns": ["Perfil profesional", "Orientación profesional para adultos", "Reorientación profesional"],
         "responses": ["Para adultos, ofrecemos orientación para reorientar tu recorrido profesional y construir un camino laboral satisfactorio. Te ayudamos a identificar las áreas profesionales óptimas según tu perfil. ¿Te gustaría más información?"]
     },
     { 
-         "tag": "orientacion profesional",
+         "tag": "orientacion profesional_5",
          "patterns": ["Orientación profesional", "Quiero orientación profesional", "Ayuda con mi carrera profesional"],
         "responses": ["Ofrecemos dos tipos de orientación profesional:\n1. Acompañamiento individual (6 sesiones de 60 minutos)\n2. Taller grupal (2 sesiones de 90 minutos)\n¿Cuál te interesa?"]
     },
         { 
-        "tag": "acompañamiento individual",
+        "tag": "acompañamiento individual_6",
         "patterns": ["Acompañamiento individual", "Sesiones individuales de orientación", "Orientación individual"],
         "responses": ["El acompañamiento individual incluye 6 sesiones de 60 minutos, presenciales u online. Diseñamos y desarrollamos junto a ti el plan de acción para acercarte a tu objetivo profesional. Te llevarás tu objetivo profesional definido, CV, carta de presentación, perfil digital, estrategia de búsqueda de empleo y preparación de entrevistas. ¿Te gustaría más información?"]
     },
     { 
-        "tag": "taller grupal",
+        "tag": "taller grupal_1",
         "patterns": ["Taller grupal", "Sesiones grupales de orientación", "Orientación en grupo"],
         "responses": ["El taller grupal incluye 2 sesiones de 90 minutos, presenciales u online. Proporciona claves del mercado laboral y recomendaciones básicas para desarrollar una estrategia de búsqueda de empleo, diseño de CV y carta de presentación, perfil digital, proceso de selección y búsqueda de oportunidades. ¿Te gustaría más información?"]
     },
@@ -73,7 +73,7 @@
         "responses": ["Ofrecemos servicios de preparación de exámenes para ayudarte a obtener los mejores resultados posibles. ¿Te gustaría más información?", "Nuestros servicios de preparación de exámenes te ayudarán a obtener los mejores resultados. Ofrecemos programas adaptados a tus necesidades, con material de estudio, clases prácticas y apoyo personalizado. ¿Te gustaría más información?"]
     },
     { 
-        "tag": "campamentos",
+        "tag": "campamentos_4",
         "patterns": ["Campamentos", "Campamentos de verano", "Quiero ir a un campamento"],
         "responses": ["Ofrecemos una variedad de campamentos para jóvenes de 7 a 19 años, incluyendo campamentos de multiaventura, inmersión en el idioma, deportes y cursos de monitores. ¿Te gustaría más información?"]
     },
@@ -83,56 +83,56 @@
         "responses": ["Los cursos preuniversitarios de verano son programas ofrecidos en diferentes universidades o instituciones educativas de prestigio. Están dirigidos a estudiantes de 14 a 18 años y permiten la exploración de intereses académicos y profesionales, además de tener un primer contacto con la vida universitaria. ¿Te gustaría más información?"]
     },
     { 
-        "tag": "voluntariado",
+        "tag": "voluntariado_45",
         "patterns": ["Voluntariado", "Quiero hacer voluntariado", "Voluntariado en España"],
         "responses": ["Ofrecemos programas de voluntariado en colaboración con diferentes organizaciones, dirigidos a jóvenes de 14 a 25 años. Estas experiencias te permitirán crecer y desarrollar competencias emocionales y profesionales. ¿Te gustaría más información?"]
     },
     { 
-        "tag": "desarrollo personal",
+        "tag": "desarrollo personal_78",
         "patterns": ["Desarrollo personal", "Cursos de desarrollo personal", "Quiero mejorar mis habilidades"],
         "responses": ["Ofrecemos cursos y charlas para desarrollar habilidades de comunicación, negociación, liderazgo, gestión del tiempo y más. Estos cursos están dirigidos tanto a jóvenes como a padres. ¿Te gustaría más información?"]
     },
 
     {
-        "tag": "colegios extranjero",
+        "tag": "colegios extranjero_66",
         "patterns": ["Colegios en el extranjero", "Quiero estudiar en el extranjero"],
         "responses": [ "Te ayudamos a seleccionar colegios en el extranjero que se adapten a tu perfil y objetivos académicos. Trabajamos con una variedad de instituciones en países como Reino Unido, Estados Unidos, Canadá, entre otros. ¿Te gustaría más información?"
                         ]
     },
     {
-        "tag": "colegios españa",
+        "tag": "colegios españa_76",
         "patterns": ["Colegios en España", "Quiero estudiar en un colegio en España"],
         "responses": [ "Ofrecemos servicios de selección de colegios en España, adaptándonos a tu perfil y necesidades académicas. ¿Te gustaría más información sobre este servicio?"
                         ]
     },
     {
-        "tag": "universidades españa",
+        "tag": "universidades españa_1",
         "patterns": ["Universidades en España", "Quiero estudiar en una universidad en España"],
         "responses": [ "Te ayudamos a seleccionar la mejor universidad en España para tus estudios de grado o postgrado. Analizamos tu perfil y objetivos para ofrecerte las opciones más adecuadas. ¿Te gustaría más información?"
                         ]
     },
     {
-        "tag": "universidades extranjero",
+        "tag": "universidades extranjero_2",
         "patterns": ["Universidades en el extranjero", "Quiero estudiar en una universidad en el extranjero"],
         "responses": [ "Ofrecemos servicios de selección de universidades en el extranjero, ayudándote a encontrar la institución y el programa que mejor se adapten a tus intereses y metas académicas. ¿Te gustaría más información?"]
     },
     {
-        "tag": "taller grupal",
+        "tag": "taller grupal_3",
         "patterns": ["Taller grupal", "Sesiones grupales de orientación", "Orientación en grupo"],
         "responses": ["Nuestros talleres grupales brindan una oportunidad para aprender y crecer junto a otros profesionales. ¿Te gustaría participar en una sesión grupal?"]
     },
     {
-        "tag": "consulta servicios",
+        "tag": "consulta servicios_2",
         "patterns": ["Que servicios tenéis", "Que servicios ofrecéis"],
         "responses": ["Actualmente contamos con una amplia gama de servicios diseñados para satisfacer tus necesidades educativas y profesionales. ¿Hay algo específico en lo que estás interesado?"]
     },
     {
-        "tag": "orientacion vocacional",
+        "tag": "orientacion vocacional_6",
         "patterns": ["Orientación vocacional", "Quiero orientación vocacional", "Ayuda con mi vocación"],
         "responses": ["Nuestra orientación vocacional aborda las necesidades únicas de cada persona. ¿Te gustaría explorar opciones para descubrir tu vocación?"]
     },
     {
-        "tag": "perfil escolar",
+        "tag": "perfil escolar_90",
         "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
         "responses": ["Para estudiantes de 13 a 16 años, ofrecemos un enfoque personalizado para ayudarte a elegir el mejor camino académico. ¿Deseas más detalles sobre cómo podemos ayudarte a alcanzar tu máximo potencial?"]
     },
@@ -374,17 +374,17 @@
       "responses": ["Ofrecemos cursos y charlas para desarrollar habilidades de comunicación, negociación, liderazgo, gestión del tiempo y más. Estos cursos están dirigidos tanto a jóvenes como a padres. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/desarrollo-personal-cursos/)."]
     },
     {
-      "tag": "colegios extranjero",
+      "tag": "colegios extranjero_76",
       "patterns": ["Colegios en el extranjero", "Quiero estudiar en el extranjero"],
       "responses": ["Te ayudamos a seleccionar colegios en el extranjero que se adapten a tu perfil y objetivos académicos. Trabajamos con una variedad de instituciones en países como Reino Unido, Estados Unidos, Canadá, entre otros. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/estudiar-en-el-extranjero/)."]
     },
     {
-      "tag": "colegios españa",
+      "tag": "colegios españa_77",
       "patterns": ["Colegios en España", "Quiero estudiar en un colegio en España"],
       "responses": ["Ofrecemos servicios de selección de colegios en España, adaptándonos a tu perfil y necesidades académicas. ¿Te gustaría más información sobre este servicio? Encuentra más información [aquí](https://beyondeducation.es/seleccion-colegios-espana-2/)."]
     },
     {
-      "tag": "universidades españa",
+      "tag": "universidades españa_89",
       "patterns": ["Universidades en España", "Quiero estudiar en una universidad en España"],
       "responses": ["Te ayudamos a seleccionar la mejor universidad en España para tus estudios de grado o postgrado. Analizamos tu perfil y objetivos para ofrecerte las opciones más adecuadas. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/orientacion-universitaria-en-espana/)."]
     },
@@ -395,17 +395,17 @@
     },
     
     {
-      "tag": "saludo",
+      "tag": "saludo_1",
       "patterns": ["Hola", "Buenos días", "Buenas tardes"],
       "responses": ["¡Hola! ¿Cómo puedo ayudarte hoy?", "¡Hola! ¿Qué necesitas?", "¡Hola! ¿En qué puedo asistirte hoy?"]
     },
     {
-      "tag": "despedida",
+      "tag": "despedida_2",
       "patterns": ["Adiós", "Hasta luego", "Nos vemos"],
       "responses": ["¡Adiós! ¡Esperamos verte pronto!", "¡Hasta luego! ¡Gracias por tu interés!", "¡Hasta pronto! ¡Estamos a tu disposición!"]
     },
     {
-      "tag": "agradecimiento",
+      "tag": "agradecimiento_3",
       "patterns": ["Gracias", "Muchas gracias", "Gracias por la ayuda", "Gracias por la información"],
       "responses": ["¡De nada! ¡Estoy aquí para ayudarte!", "¡No hay de qué! Si necesitas cualquier otra cosa, no dudes en consultarnos", "¡Fue un placer ayudarte!"]
     },
@@ -415,27 +415,27 @@
       "responses": ["Actualmente contamos con múltiples servicios. Podemos ofrecer orientación vocacional y profesional, selección de colegios y universidades, preparación de exámenes, campamentos, cursos preuniversitarios, voluntariados y desarrollo personal. ¿En qué estás interesado?", "Ofrecemos una variedad de servicios. ¿Te gustaría saber más sobre alguno en particular?"]
     },
     {
-      "tag": "orientacion vocacional",
+      "tag": "orientacion vocacional_1",
       "patterns": ["Orientación vocacional", "Quiero orientación vocacional", "Ayuda con mi vocación"],
       "responses": ["Ofrecemos orientación vocacional para diferentes perfiles:\n1. Perfil vocacional ESCOLAR (13-16 años)\n2. Perfil vocacional UNIVERSITARIO (17-25 años)\n3. Perfil vocacional PROFESIONAL (adultos)\n¿Cuál te interesa? Para más detalles, puedes visitar nuestra página [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
     },
     {
-      "tag": "perfil escolar",
+      "tag": "perfil escolar_1",
       "patterns": ["Perfil escolar", "Orientación para estudiantes de 13-16 años", "Vocación para ESO y Bachillerato"],
       "responses": ["Para estudiantes de 13 a 16 años, ayudamos a elegir el sistema académico y el colegio que sacará todo tu potencial, además del itinerario de bachillerato español, las asignaturas de IB o A levels que mejor se ajusten a tu perfil y objetivos académicos. ¿Te gustaría más información? Puedes encontrar más detalles [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
     },
     {
-      "tag": "perfil universitario",
+      "tag": "perfil universitario_2",
       "patterns": ["Perfil universitario", "Orientación para estudiantes de 17-25 años", "Vocación universitaria"],
       "responses": ["Para estudiantes de 17 a 25 años, te ayudamos a elegir tu carrera universitaria, programa de formación profesional o postgrado, así como la mejor universidad para ti en el o los países de interés. ¿Te gustaría más información? Encuentra más detalles [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
     },
     {
-      "tag": "perfil profesional",
+      "tag": "perfil profesional_3",
       "patterns": ["Perfil profesional", "Orientación profesional para adultos", "Reorientación profesional"],
       "responses": ["Para adultos, ofrecemos orientación para reorientar tu recorrido profesional y construir un camino laboral satisfactorio. Te ayudamos a identificar las áreas profesionales óptimas según tu perfil. ¿Te gustaría más información? Más información [aquí](https://beyondeducation.es/orientacion-vocacional-profesional-academica/)."]
     },
     {
-      "tag": "orientacion profesional",
+      "tag": "orientacion profesional_1",
       "patterns": ["Orientación profesional", "Quiero orientación profesional", "Ayuda con mi carrera profesional"],
       "responses": ["Ofrecemos dos tipos de orientación profesional:\n1. Acompañamiento individual (6 sesiones de 60 minutos)\n2. Taller grupal (2 sesiones de 90 minutos)\n¿Cuál te interesa? Para más detalles, puedes visitar nuestra página [aquí](https://beyondeducation.es/orientacion-profesional-2/)."]
     },
@@ -465,7 +465,7 @@
       "responses": ["Ofrecemos servicios de preparación de exámenes para ayudarte a obtener los mejores resultados posibles. ¿Te gustaría más información?", "Nuestros servicios de preparación de exámenes te ayudarán a obtener los mejores resultados. Ofrecemos programas adaptados a tus necesidades, con material de estudio, clases prácticas y apoyo personalizado. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/preparacion-examenes/)."]
     },
     {
-      "tag": "campamentos",
+      "tag": "campamentos_1",
       "patterns": ["Campamentos", "Campamentos de verano", "Quiero ir a un campamento"],
       "responses": ["Ofrecemos una variedad de campamentos para jóvenes de 7 a 19 años, incluyendo campamentos de multiaventura, inmersión en el idioma, deportes y cursos de monitores. Los campamentos están disponibles en países como España, Reino Unido, Estados Unidos y Canadá. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/campamentos-verano/)."]
     },
@@ -475,7 +475,7 @@
       "responses": ["Los cursos preuniversitarios de verano son programas ofrecidos en diferentes universidades o instituciones educativas de prestigio. Están dirigidos a estudiantes de 14 a 18 años y permiten la exploración de intereses académicos y profesionales, además de tener un primer contacto con la vida universitaria. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/cursos-preuniversitarios-verano/)."]
     },
     {
-      "tag": "voluntariado",
+      "tag": "voluntariado_4",
       "patterns": ["Voluntariado", "Quiero hacer voluntariado", "Voluntariado en España"],
       "responses": ["Ofrecemos programas de voluntariado en colaboración con diferentes organizaciones, dirigidos a jóvenes de 14 a 25 años. Estas experiencias te permitirán crecer y desarrollar competencias emocionales y profesionales. Los programas están disponibles en España y otros países europeos. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/hacer-voluntariado-espana/)."]
     },
@@ -490,31 +490,31 @@
       "responses": ["Te ayudamos a seleccionar colegios en el extranjero que se adapten a tu perfil y objetivos académicos. Trabajamos con una variedad de instituciones en países como Reino Unido, Estados Unidos, Canadá, entre otros. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/estudiar-en-el-extranjero/)."]
     },
     {
-      "tag": "colegios españa",
+      "tag": "colegios españa_890",
       "patterns": ["Colegios en España", "Quiero estudiar en un colegio en España"],
       "responses": ["Ofrecemos servicios de selección de colegios en España, adaptándonos a tu perfil y necesidades académicas. ¿Te gustaría más información sobre este servicio? Encuentra más información [aquí](https://beyondeducation.es/seleccion-colegios-espana-2/)."]
     },
     {
-      "tag": "universidades españa",
+      "tag": "universidades españa_09",
       "patterns": ["Universidades en España", "Quiero estudiar en una universidad en España"],
       "responses": ["Te ayudamos a seleccionar la mejor universidad en España para tus estudios de grado o postgrado. Analizamos tu perfil y objetivos para ofrecerte las opciones más adecuadas. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/orientacion-universitaria-en-espana/)."]
     },
     {
-      "tag": "universidades extranjero",
+      "tag": "universidades extranjero_07",
       "patterns": ["Universidades en el extranjero", "Quiero estudiar en una universidad en el extranjero"],
       "responses": ["Ofrecemos servicios de selección de universidades en el extranjero, ayudándote a encontrar la institución y el programa que mejor se adapten a tus intereses y metas académicas. ¿Te gustaría más información? Encuentra más información [aquí](https://beyondeducation.es/estudiar-en-el-extranjero-grados-y-postgrados/)."]
     },
-    { "tag": "voluntariados",
+    { "tag": "voluntariados_1",
       "patterns": ["tipo de voluntariados", "cuantos voluntariados hay", "que voluntariados hay", "qué voluntariados hay?"],
       "responses": ["Contamos con voluntariados de verano, voluntariados de transformación, voluntariados en África y voluntariados juveniles en Kamarata ", "Tenemos programas de verano, de transformación, voluntariados en África y en Kamarata"]
 
     },
-    { "tag": "voluntariados",
+    { "tag": "voluntariados_2",
       "patterns": ["cuentame acerca de los voluntariados de verano", "hablame de los programas de verano", "summer volunteer program", "quiero saber acerca de los voluntariados de verano"],
       "responses": [" Se trata de voluntariados de 2, 3, 4 o 6 semanas de duración, que te da la oportunidad de viajar a Costa Rica, Ecuador o Panamá para explorar un tema que te apasione. ", "Son programas que te sumergirán en la producción de café, la adaptación al cambio climático y la conservación en Costa Rica, la restauración de ecosistemas y los derechos indígenas en Ecuador, o la conservación impulsada por la comunidad en Panamá."]
 
     },
-    { "tag": "voluntariados",
+    { "tag": "voluntariados_3",
       "patterns": ["a donde me puedo ir de voluntariado en verano", "lugares de los programas de verano de voluntariado", "summer volunteer program", "destinos de los voluntariados de verano"],
       "responses": [" Tenemos programas en Costa Rica, Ecuador y Panamá ", "Contamos con programas en Costa Rica de 2 a 9 semanas, en Ecuador de 3 a 6 semanas, y en Panamá de 2 a 3 semanas."]
 
@@ -716,7 +716,7 @@
         ]
     },
     {
-        "tag": "informacion",
+        "tag": "informacion_2",
         "patterns": [
             "informacion",
             "quiero informacion"
@@ -738,7 +738,7 @@
         ]
     }, 
     {
-        "tag": "orientacion",
+        "tag": "orientacion_1",
         "patterns": [
             "estoy interesada en orientacion",
             "estoy interesado en orientacion "
@@ -761,7 +761,7 @@
         ]
     },
     {
-        "tag": "perfil escolar",
+        "tag": "perfil escolar_09",
         "patterns": [
             "estoy interesada en perfil escolar",
             "perfil escolar",
@@ -773,7 +773,7 @@
         ]
     }, 
     {
-        "tag": "perfil universitario",
+        "tag": "perfil universitario_23",
         "patterns": [
             "estoy interesada en perfil universitario",
             "perfil universitario",
@@ -785,7 +785,7 @@
         ]
     },
     {
-        "tag": "perfil profesional",
+        "tag": "perfil profesional_67",
         "patterns": [
             "estoy interesada en perfil profesional",
             "perfil profesional",
@@ -797,7 +797,7 @@
         ]
     },
     {
-        "tag": "orientacion profesional",
+        "tag": "orientacion profesiona_093",
         "patterns": [
             "estoy interesada en orientacion profesional",
             "estoy interesado en orientacion profesional",
@@ -809,7 +809,7 @@
         ]
     },
     {
-        "tag": "acompañamiento individual",
+        "tag": "acompañamiento individual_0976",
         "patterns": [
             "estoy interesada en acompañamiento individual",
             "estoy interesado en acompañamiento individual",
@@ -822,7 +822,7 @@
         ]
     },
     {
-        "tag": "taller grupal",
+        "tag": "taller grupal_678",
         "patterns": [
             "estoy interesada en taller grupal",
             "estoy interesado en taller grupal",
@@ -835,7 +835,7 @@
         ]
     },
     {
-        "tag": "mas informacion",
+        "tag": "mas informacion_34",
         "patterns": [
             "mas informacion",
             "quiero mas informacion"
@@ -847,7 +847,7 @@
         ]
     },
     {
-      "tag": "pregunta general",
+      "tag": "pregunta general_3",
       "patterns": [
           "que es servicio personalizado",
           "qué es servicio personalizado",
@@ -861,7 +861,7 @@
       ]
     },
     {
-      "tag": "pregunta general",
+      "tag": "pregunta general_1",
       "patterns": [
           "por que elegir vuestra empresa",
           "por qué elegir vuestra empresa",
@@ -877,7 +877,7 @@
       ]
     },
     {
-      "tag": "pregunta general",
+      "tag": "pregunta general_2",
       "patterns": [
           "estoy fuera de españa, puedo tener sus servicios",
           "estoy fuera de españa, pueden ofrecerme sus servicios",
@@ -893,7 +893,7 @@
       ]
     },
     {
-      "tag": "perfil vocacional",
+      "tag": "perfil vocacional_98",
       "patterns": [
           "en cuanto tiempo se realiza el perfil vocacional",
           "en cuánto tiempo se realiza el perfil vocacional",
@@ -909,7 +909,7 @@
       ]
     },
     {
-      "tag": "perfil vocacional",
+      "tag": "perfil vocacional_0",
       "patterns": [
           "en qué consiste el proceso de orientación vocacional",
           "en que consiste el proceso de orientacion vocacional",
@@ -925,7 +925,7 @@
       ]
     },
     {
-      "tag": "perfil vocacional",
+      "tag": "perfil vocacional_7",
       "patterns": [
           "en qué consiste el proceso de orientación vocacional",
           "en que consiste el proceso de orientacion vocacional",
@@ -941,7 +941,7 @@
       ]
     },
     {
-      "tag": "perfil vocacional",
+      "tag": "perfil vocacional_4",
       "patterns": [
           "qué me llevo al terminar el proceso de orientación laboral",
           "qué me llevaré del proceso de orientación laboral"
@@ -952,7 +952,7 @@
       ]
     },
     {
-      "tag": "perfil vocacional",
+      "tag": "perfil vocacional_1",
       "patterns": [
           "por qué incluyen a los padres en el proceso de orientación vocacional",
           "por qué los padres están en el proceso de orientación vocacional"
@@ -963,7 +963,7 @@
       ]
     },
     {
-      "tag": "perfil vocacional",
+      "tag": "perfil vocacional_2",
       "patterns": [
           "Y si mis intereses han cambiado durante los siguientes años a haber realizado el perfil vocacional",
           "Qué pasa si cambio de intereses después de realizar el perfil vocacional"
@@ -974,7 +974,7 @@
       ]
     },
     {
-      "tag": "perfil vocacional",
+      "tag": "perfil vocacional_3",
       "patterns": [
           "Cuándo es mejor iniciar un proceso de orientación vocacional",
           "Cuál es el momento ideal para iniciar un proceso de orientación vocacional"
@@ -996,7 +996,7 @@
       ]
     },
     {
-      "tag": "asesoramiento universitario",
+      "tag": "asesoramiento universitario_2",
       "patterns": [
           "Puedo contratar por separado la propuesta universitaria o el acompañamiento a la aplicación",
           "puedo contratar por un lado la propuesta universitaria y el acompañamiento a la aplicación"
@@ -1007,7 +1007,7 @@
       ]
     },
     {
-      "tag": "carreras universitarias",
+      "tag": "carreras universitarias_678",
       "patterns": [
           "a cuántas carreras puedo aplicar",
           " cuántas carreras puedo solicitar"
@@ -1018,7 +1018,7 @@
       ]
     },
     {
-      "tag": "carreras universitarias",
+      "tag": "carreras universitarias_0987",
       "patterns": [
           "cuál es el momento ideal para recibir asesoramiento universitario",
           "cuál es el momento de recibir asesoramiento universitario",
@@ -1031,7 +1031,7 @@
       ]
     },
     {
-      "tag": "asesoramiento universitario",
+      "tag": "asesoramiento universitario_678",
       "patterns": [
           "cuántas sesiones de trabajo incluye el asesoramiento universitario",
           "cuántas sesiones incluye el asesoramiento universitario",
@@ -1057,7 +1057,7 @@
       ]
     },
     {
-      "tag": "preparacion examenes",
+      "tag": "preparacion examenes_4566",
       "patterns": [
           "nos ayudáis a preparar exámenes de admisión y la entrevista de la universidad ",
           "me ayudáis a preparar los exámenes de admisión de la universidad",
@@ -1094,7 +1094,7 @@
       ]
     },
     {
-      "tag": "ingles",
+      "tag": "ingles uk",
       "patterns": [
           "qué nivel de inglés necesito para estudiar en uk ",
           "qué certificación de inglés necesito para estudiar en la universidad en uk",
@@ -1107,7 +1107,7 @@
       ]
     },
     {
-      "tag": "ingles",
+      "tag": "ingles holanda",
       "patterns": [
           "qué nivel de inglés necesito para estudiar en holanda ",
           "qué certificación de inglés necesito para estudiar en la universidad en holanda"

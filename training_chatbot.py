@@ -9,6 +9,7 @@ from keras.optimizers import SGD
 from keras.optimizers.schedules import ExponentialDecay
 import random
 nltk.download('punkt')
+nltk.download('wordnet')
 
 
 data_file = open('intents.json', 'r', encoding='utf-8').read()
