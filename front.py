@@ -5,8 +5,6 @@ import nltk
 nltk.download('punkt')
 nltk.download('wordnet')
 
-
-
 import os
 
 my_database = os.environ.get('my_database')
@@ -14,6 +12,12 @@ my_host = os.environ.get('my_host')
 my_password = os.environ.get('my_password')
 my_port = os.environ.get('my_port')
 my_user = os.environ.get('my_user')
+
+my_database = "chatbot_8n2w"
+my_host = "dpg-cp6qaka0si5c73aigcc0-a.frankfurt-postgres.render.com"
+my_password = "UmxrGACXMb3Y1jaYLwnuS5zQDUBtXWg6"
+my_port = 5432 
+my_user = "chatbot_8n2w_user"
 
 # Configura las variables de conexión
 HOST = my_host
@@ -63,7 +67,11 @@ create_table_if_not_exists()
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_page_config(page_title="Chaty", page_icon="img/cropped-Beyond-Education_Horizonatal-color.png")
+
+# Título
+
 st.title(":male_mage: Asistente virtual:robot_face:")
+
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -83,19 +91,21 @@ if st.session_state.first_message:
 
     st.session_state.first_message = False
 
-if prompt := st.chat_input("cómo puedo ayudarte?"):
+if prompt := st.chat_input("¿Cómo puedo ayudarte?"):
     with st.chat_message("user"):
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # Implementación del algoritmo
-    insts = predict_class(prompt)
-    res = get_response(insts, intents)
+    # Implementación del algoritmo con manejo de errores
+    try:
+        insts = predict_class(prompt)
+        res = get_response(insts, intents)
+    except IndexError:
+        res = "Perdona, no tengo clara la pregunta, ¿puedes reformularla?, aún soy 1.0 [:chipmunk:](https://pedrope.streamlit.app/)"
 
     with st.chat_message("assistant"):
         st.markdown(res)
     st.session_state.messages.append({"role": "assistant", "content": res})
 
     # Guardar pregunta y respuesta en la base de datos
-    save_message_to_db(prompt, res)
-
+    save_message_to_db(prompt.replace("DELETE", ""), res)
