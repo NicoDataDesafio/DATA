@@ -101,7 +101,7 @@ if prompt := st.chat_input("¿Cómo puedo ayudarte?"):
         insts = predict_class(prompt)
         res = get_response(insts, intents)
     except IndexError:
-        res = "Perdona, no tengo clara la pregunta, ¿puedes reformularla?, aún soy 1.0 [:chipmunk:](https://pedrope.streamlit.app/)"
+        res = "Perdona, no tengo clara la pregunta, ¿puedes reformularla?, aún soy 1.0 [:ghost:](https://pedrope.streamlit.app/)"
 
     with st.chat_message("assistant"):
         st.markdown(res)

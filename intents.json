@@ -10,11 +10,6 @@
         "tag": "despedida",
         "patterns": ["Adiós", "Hasta luego", "Nos vemos"],
         "responses": ["¡Adiós! ¡Esperamos verte pronto!", "¡Hasta luego! ¡Gracias por tu interés en Beyond Education!", "¡Hasta pronto! ¡Estamos a tu disposición!" ]
-    },
-    { 
-        "tag": "contacto",
-        "patterns": ["Contacto", "Donde me puedo contactar", "numero telefono"],
-        "responses": ["¿Te gustaría más información?, dejanos tu [contacto](https://beyondeducation.es/contacto/)"]
     }, 
     { 
         "tag": "agradecimiento",
@@ -978,7 +973,7 @@
       ]
     },
     {
-      "tag": "ingles_estados",
+      "tag": "ingles",
       "patterns": [
           "qué nivel de inglés necesito para estudiar en estados unidos ",
           "qué certificación de inglés necesito para estudiar en la universidad en estados unidos"
@@ -990,12 +985,14 @@
       ]
     },
     {
-      "tag": "ingles_1",
+      "tag": "ingles",
       "patterns": [
           "qué nivel de inglés necesito para estudiar en uk ",
           "qué certificación de inglés necesito para estudiar en la universidad en uk",
-          "qué nivel de inglés necesito para estudiar en reino unido",
-          "Quiero aprender ingles","Quiero aprender inglés"],
+          "qué nivel de inglés necesito para estudiar en reino unido"
+         
+           
+      ],
       "responses": [
           "Las universidades tienen requerimientos específicos de inglés para cada carrera. En general, el nivel está alrededor de 6.5 en el IELTS (o 176 en Cambridge English Score), con algunos requisitos mínimos en cada componente del examen. Sin embargo, en ciertas carreras como derecho o medicina, los requerimientos de inglés pueden llegar a ser de 7.0 o más, con requisitos mínimos específicos en cada componente. En la propuesta de universidades siempre incluimos tanto los requisitos académicos como el nivel de inglés requerido. El requisito de inglés no es necesario a la hora de aplicar, pero si una vez admitido. Algunas universidades ofrecen cursos de inglés previos a la incorporación si el estudiante no cumple con los requisitos exigidos. "
       ]
