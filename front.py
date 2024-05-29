@@ -63,6 +63,10 @@ create_table_if_not_exists()
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_page_config(page_title="Chaty", page_icon="img/cropped-Beyond-Education_Horizonatal-color.png")
 
+st.get_option("theme.primaryColor")
+st.get_option("theme.secondaryBackgroundColor")
+st.get_option("server.enableCORS")
+st.get_option("server.enableXsrfProtection")
 # Título
 
 st.title(":male_mage: Asistente virtual:robot_face:")
@@ -96,7 +100,7 @@ if prompt := st.chat_input("¿Cómo puedo ayudarte?"):
         insts = predict_class(prompt)
         res = get_response(insts, intents)
     except IndexError:
-        res = "Perdona, no tengo clara la pregunta, ¿puedes reformularla?, aún soy 1.0 [:chipmunk:](https://pedrope.streamlit.app/)"
+        res = "Perdona, no tengo clara la pregunta, ¿puedes reformularla?, aún soy 1.0 [:ghost:](https://pedrope.streamlit.app/)"
 
     with st.chat_message("assistant"):
         st.markdown(res)
