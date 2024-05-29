@@ -71,7 +71,7 @@ st.get_option("server.enableXsrfProtection")
 
 title_alignment="""
 <style>
-#the-title {
+:male_mage: Asistente virtual:robot_face: {
   text-align: center
 }
 </style>
