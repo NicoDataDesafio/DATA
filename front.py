@@ -63,6 +63,10 @@ create_table_if_not_exists()
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_page_config(page_title="Chaty", page_icon="img/cropped-Beyond-Education_Horizonatal-color.png")
 
+st.get_option("theme.primaryColor")
+st.get_option("theme.secondaryBackgroundColor")
+st.get_option("server.enableCORS")
+st.get_option("server.enableXsrfProtection")
 # Título
 
 st.title(":male_mage: Asistente virtual:robot_face:")
