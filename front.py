@@ -71,9 +71,6 @@ st.get_option("server.enableXsrfProtection")
 st.title(":male_mage: Asistente virtual :robot_face:")
 
 
-st.markdown("<h1 style='text-align: center;'>:male_mage: Asistente virtual :robot_face:</h1>", unsafe_allow_html=True)
-
-
 
 
 if "messages" not in st.session_state:
