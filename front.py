@@ -68,17 +68,18 @@ st.get_option("theme.secondaryBackgroundColor")
 st.get_option("server.enableCORS")
 st.get_option("server.enableXsrfProtection")
 # Título
+st.title(":male_mage: Asistente virtual :robot_face:")
 
 title_alignment="""
 <style>
-:male_mage: Asistente virtual:robot_face: {
+#:male_mage:-Asistente-virtual-:robot_face: {
   text-align: center
 }
 </style>
 """
 
 st.markdown(title_alignment, unsafe_allow_html=True)
-st.title(":male_mage: Asistente virtual:robot_face:")
+
 
 
 if "messages" not in st.session_state:
