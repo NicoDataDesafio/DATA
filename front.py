@@ -68,14 +68,16 @@ st.get_option("theme.secondaryBackgroundColor")
 st.get_option("server.enableCORS")
 st.get_option("server.enableXsrfProtection")
 # Título
-st.markdown("""
-        <style>
-        iframe {
-            width: 100%;
-        }
-        </style>
-        """, unsafe_allow_html=True)
 
+title_alignment="""
+<style>
+#the-title {
+  text-align: center
+}
+</style>
+"""
+
+st.markdown(title_alignment, unsafe_allow_html=True)
 st.title(":male_mage: Asistente virtual:robot_face:")
 
 
