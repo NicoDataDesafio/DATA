@@ -70,15 +70,9 @@ st.get_option("server.enableXsrfProtection")
 # Título
 st.title(":male_mage: Asistente virtual :robot_face:")
 
-title_alignment="""
-<style>
-#:male_mage:-Asistente-virtual-:robot_face: {
-  text-align: center
-}
-</style>
-"""
 
-st.markdown(title_alignment, unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>:male_mage: Asistente virtual :robot_face:</h1>", unsafe_allow_html=True)
+
 
 
 
